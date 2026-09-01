@@ -1,0 +1,10 @@
+---
+title: "Lab 3: Text, Image, and Video Annotation"
+subtitle: "Week 3"
+format:
+  html:
+    code-fold: false
+    code-tools: true
+---
+
+*Content coming soon.*

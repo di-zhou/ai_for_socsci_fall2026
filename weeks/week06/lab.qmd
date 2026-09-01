@@ -1,0 +1,10 @@
+---
+title: "Lab 6: GenAI and Qualitative Research"
+subtitle: "Week 6"
+format:
+  html:
+    code-fold: false
+    code-tools: true
+---
+
+*Content TBD*

@@ -1,0 +1,291 @@
+---
+title: "Week 1: Introduction & Set-up"
+subtitle: "AI for Social Science Research · Fall 2026"
+author: "Di Zhou"
+date: "2026-09-02"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    show-notes: false
+    preview-links: auto
+    transition: fade
+    width: 1600
+    height: 900
+    footer: "AI for Social Science Research · Week 1"
+---
+
+# Part I: Course Intro & Overview {.center background-color="#CC0033"}
+
+*2:00–2:20*
+
+## Course Logistics
+
+- **Course:** 16:920:574:M1 Topics in Sociology — AI and Social Science Research
+- **Term:** Fall 2026, 7-week minicourse (Sep. 2 – Oct. 14)
+- **Meeting time:** Wednesdays 2:00–4:40 pm, Davison 128
+- **Office hours:** Wednesdays 1:00–2:00 pm, Davison 137 — [sign up here](https://calendar.app.google/JRY6bzeHvYBcftX59)
+- **Course website:** [link to GitHub Pages site]
+
+. . .
+
+**Add/drop:** This is a 7-week minicourse — if you're considering adding or dropping, please do so as soon as possible.
+
+## Course Goals
+
+By the end of this course, you should be able to:
+
+1. Have a general understanding of the current applications of genAI tools in sociological research, and form your own evaluations on their effectiveness
+2. Understand how you can incorporate genAI tools for your own research interests
+3. Understand what genAI can and cannot do for producing high-quality research
+
+## 7-Week Roadmap
+
+| Week | Date | Topic | Format |
+|------|------|-------|--------|
+| **1** | **Sep. 2** | **Introduction & Set-up** | **Lecture + Lab** |
+| 2 | Sep. 9 | Computational Methods & LLM Basics | Lecture + Lab |
+| 3 | Sep. 16 | Text, Image & Video Annotation | Presentation + Lab |
+| 4 | Sep. 23 | Simulating Subjects & Agents | Presentation + Lab + Co-work |
+| 5 | Sep. 30 | AutoResearch | Presentation + Lab + Discussion |
+| 6 | Oct. 7 | Qualitative Research | Presentation + Co-work |
+| 7 | Oct. 14 | Final Presentations | Student Presentations |
+
+## Assessment
+
+| Component | Weight | How to earn points |
+|---|---|---|
+| Participation | 15% | Attend, ask questions, share thoughts on readings |
+| Lab Assignments | 15% | Complete in-class exercises; submit notebooks if you need extra time |
+| Reading Presentation | 20% | Group of 2–3, ~20 min, Weeks 3–6 — **sign up today!** |
+| Final Project Presentation | 20% | ~10 min + 5 min Q&A on Week 7 |
+| Final Project Deliverables | 30% | Proposal or report — details on next slide |
+
+## Final Project: Three Tracks
+
+Your project must fulfill **at least one** of:
+
+1. The research **uses genAI/LLM** as part of its research methods
+2. The research is **about** the usage or applications of genAI/LLM
+3. The research **tests/pilots** genAI/LLM tools for the research workflow
+
+. . .
+
+**Deliverables:**
+
+- Types (1) or (2): project proposal, ≥8 pages (double-spaced, 12pt)
+- Type (3): project report (~5 pp.) + reflection (~5 pp.) + code/appendix
+
+**Timeline:** Co-work on Weeks 4 & 6 → Presentations on Week 7
+
+## AI Usage Policy
+
+::: {.callout-important}
+## AI writing is strictly banned
+
+You are **not allowed** to use AI to generate any writing assignments for this course.
+:::
+
+**Permitted:**
+
+- Grammar corrections only (subject–verb agreement, tense, articles, spelling)
+- Using genAI as a **research tool** in labs and projects
+
+**Rule of thumb:** Do not automate the process of learning, thinking, and writing.
+
+You are held responsible for your research design and every analytical decision, regardless of whether it is made by you or your AI agents.
+
+## Prerequisites & Logistics
+
+- **Bring your laptop** to every class
+- **Purchase Claude Pro or ChatGPT Plus** if you haven't — sign up ~mid-September for 1 month ($20)
+- Python proficiency not required, but self-study is expected
+
+. . .
+
+**Questions?**
+
+# Introductions {.center background-color="#CC0033"}
+
+*2:20–2:30*
+
+## Getting to Know Each Other
+
+Please share:
+
+1. Your **name** and **department**
+2. Your **research interests**
+3. **What you want to learn** from this course
+
+. . .
+
+<br>
+
+*After introductions: 15-minute break (2:30–2:45)*
+
+*During break: please form groups of 2–3 and sign up for reading presentations!*
+
+# Part II: State of GenAI in Social Science Research {.center background-color="#CC0033"}
+
+*2:45–3:30*
+
+## What is Generative AI?
+
+**Generative AI** = models that produce new content — text, images, video, code, audio — rather than classifying or scoring existing data.
+
+. . .
+
+**Types of generative models:**
+
+- **Text generation:** LLMs (GPT-4, Claude, Llama, Gemini, DeepSeek)
+- **Image generation:** DALL-E, Midjourney, Stable Diffusion
+- **Video generation:** Sora, Runway, Kling
+- **Multimodal:** models that handle text + images + video together
+
+## Frontier Models & Open-Weight Models
+
+:::: {.columns}
+::: {.column width="50%"}
+**Frontier (proprietary) models:**
+
+- [OpenAI GPT-4o / o1](https://openai.com)
+- [Anthropic Claude](https://anthropic.com)
+- [Google Gemini](https://deepmind.google/technologies/gemini/)
+- [xAI Grok](https://x.ai)
+
+:::
+::: {.column width="50%"}
+**Open-weight models:**
+
+- [Meta Llama](https://llama.meta.com/)
+- [DeepSeek](https://www.deepseek.com/)
+- [Mistral](https://mistral.ai/)
+- [Qwen](https://qwenlm.github.io/)
+
+:::
+::::
+
+. . .
+
+The distinction matters for research: open-weight models allow inspection and fine-tuning; proprietary models offer higher capability but less transparency.
+
+## Engage & Share
+
+**Discussion:**
+
+- Which AI models have you tried?
+- What tasks do you ask them to do?
+- How "good" are they for your purposes?
+- What surprised you — or disappointed you?
+
+## GenAI in Scientific Research
+
+The diffusion of LLM-style language in academic publishing has been rapid.
+
+. . .
+
+**Evidence:**
+
+<!-- TODO: embed Figure 1 from Liang et al. 2025 -->
+<!-- TODO: embed Figure 4b from Siler 2026 -->
+
+*[Figures from Liang et al. 2025 and Siler 2026 showing the surge of LLM-characteristic language in published academic articles]*
+
+## Sociology is Not an Exception
+
+<!-- TODO: embed Figure 1 Panel B from Cao 2026 -->
+
+*[Figure from Cao 2026 showing adoption of LLMs across sociology subfields]*
+
+Different subfields are adopting at different rates — which ones, and why?
+
+## The Rise of "Auto-Research"
+
+<!-- TODO: embed Figure 1 from Yamada et al. n.d. (AI Scientist v2) -->
+
+*[Figure from Yamada et al. showing the agentic tree-search workflow for automated scientific discovery]*
+
+Automated research pipelines are moving from proof-of-concept to active use in some labs.
+
+## Ongoing Debates
+
+These developments raise hard questions:
+
+::: {.incremental}
+- **Ethics of AI use** — Where is the line between augmentation and academic dishonesty?
+- **Integrity of academic work** — If an LLM co-writes your paper, whose ideas are they?
+- **Inequality in knowledge production** — Does AI lower barriers for some (language, training) while reinforcing them for others (access, resources, normative orientations)?
+- **Quality of AI-generated research** — Can automated pipelines produce genuinely novel insights?
+:::
+
+<!-- TODO: optional — show screenshot of recent Nature/Science articles on AI & science -->
+
+## GenAI in Sociological Research
+
+### Pre-AI computational methods:
+
+- Dictionary methods, topic modeling, word embeddings
+- Named entity recognition, dependency parsing
+- Supervised ML classifiers, agent-based models
+- **Research goals:** measuring sentiments, identifying themes, quantifying meanings, extracting information and relations, classifying text
+
+## GenAI in Sociological Research (cont.)
+
+### After AI, three shifts:
+
+::: {.incremental}
+1. **Same goals, new tools** — Tasks like annotation (sentiment, themes, classification, information extraction) can now be performed by LLMs/MLLMs without developing specialized algorithms
+2. **Expanded scope** — AI enables new scales and modalities: large-scale image annotation, customized survey follow-up questions, simulated social interactions
+3. **New research topics** — AI as surrogates for human populations, biases in AI, AI and scientific knowledge production, human-AI interaction, social and ethical implications (labor markets, monopoly, environmental politics of AI, etc.)
+:::
+
+## This Course's Focus
+
+:::: {.columns}
+::: {.column width="60%"}
+**This minicourse** focuses mainly on:
+
+- **(2) GenAI as research methods** — annotation, simulation, autoresearch, qualitative analysis
+- **AI as surrogates** from (3) — how well do LLMs mirror human populations?
+:::
+::: {.column width="40%"}
+**Coming next:** In the follow-up minicourse *Sociology of AI*, we focus on **(3)** — the social, ethical, and political dimensions of AI as a technology.
+:::
+::::
+
+. . .
+
+<br>
+
+*Break: 3:30–3:45*
+
+*Reminder: please finalize your presentation groups during the break!*
+
+# Lab Time! {.center background-color="#CC0033"}
+
+*3:45–4:40 — Some lecture points are woven into the lab notes*
+
+## Presentation Sign-Up
+
+Before we start the lab — have all groups signed up?
+
+| Week | Topic | Date | Group |
+|------|-------|------|-------|
+| 3 | Text, Image & Video Annotation | Sep. 16 | |
+| 4 | Simulating Subjects & Agents | Sep. 23 | |
+| 5 | AutoResearch | Sep. 30 | |
+| 6 | Qualitative Research | Oct. 7 | |
+
+## Lab Overview
+
+Today's lab covers:
+
+1. **Data management rules** — the 3-2-1 rule, sandbox environments for AI co-work
+2. **Version control** — what Git is and why we need it
+3. **CLI basics** — where to find it, why we need it
+4. **Python** — what it is, how it compares to R
+5. **Conda** — managing environments and packages
+6. **Jupyter Notebook** — what it is, notebooks vs. scripts
+7. **Basic data wrangling & ML in Python** — loading data, descriptives, supervised & unsupervised models
+
+**Open the lab page:** [Lab 1: Environment Setup & First Steps](lab.qmd)

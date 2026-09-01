@@ -1,0 +1,10 @@
+---
+title: "Lab 4: Simulating Subjects, Interactive Agents, and Survey Experiments"
+subtitle: "Week 4"
+format:
+  html:
+    code-fold: false
+    code-tools: true
+---
+
+*Content coming soon.*

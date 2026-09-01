@@ -1,0 +1,10 @@
+---
+title: "Lab 2: Computational Methods before LLM & LLM Technical Basics"
+subtitle: "Week 2"
+format:
+  html:
+    code-fold: false
+    code-tools: true
+---
+
+*Content coming soon.*

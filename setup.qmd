@@ -1,0 +1,125 @@
+---
+title: "Setup Guide"
+---
+
+Follow these steps **before the first class** to have your environment ready for the Week 1 lab.
+
+## 1. Install Git
+
+::: {.panel-tabset}
+
+### macOS
+```bash
+# Install via Homebrew (recommended)
+brew install git
+
+# Or install Xcode Command Line Tools
+xcode-select --install
+```
+
+### Windows
+Download and install [Git for Windows](https://gitforwindows.org/).
+
+### Linux
+```bash
+sudo apt-get install git   # Debian/Ubuntu
+sudo dnf install git       # Fedora
+```
+:::
+
+Verify: `git --version` should return 2.x or higher.
+
+## 2. Create a GitHub Account
+
+If you don't already have one, sign up at [github.com](https://github.com). Use your university email for free GitHub Pro access via [GitHub Education](https://education.github.com).
+
+## 3. Install Python via Miniconda
+
+We use [Miniconda](https://docs.conda.io/en/latest/miniconda.html) to manage Python environments.
+
+::: {.panel-tabset}
+
+### macOS (Apple Silicon)
+```bash
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
+```
+
+### macOS (Intel)
+```bash
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+
+### Windows
+Download and run the [Miniconda installer for Windows](https://docs.conda.io/en/latest/miniconda.html).
+
+### Linux
+```bash
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+:::
+
+After installation, restart your terminal and verify: `conda --version`.
+
+## 4. Create the Course Environment
+
+```bash
+# Create a dedicated environment for this course
+conda create -n aisocsci python=3.11 -y
+
+# Activate it
+conda activate aisocsci
+
+# Install core packages
+pip install jupyter pandas numpy matplotlib seaborn scikit-learn
+pip install openai anthropic  # for LLM API access in labs
+```
+
+You'll activate this environment (`conda activate aisocsci`) each time you work on course materials.
+
+## 5. Clone the Course Repository
+
+```bash
+cd ~/Documents  # or wherever you keep course materials
+git clone https://github.com/dizhou/ai_for_socsci_fall2026.git
+cd ai_for_socsci_fall2026
+```
+
+## 6. Launch Jupyter
+
+```bash
+conda activate aisocsci
+jupyter notebook
+```
+
+This opens a browser tab. Navigate to `weeks/week01/` to find the first lab.
+
+## 7. LLM API Access
+
+Several labs require API access to LLMs. You will need **one** of:
+
+- **Anthropic (Claude):** Sign up at [console.anthropic.com](https://console.anthropic.com) and create an API key
+- **OpenAI (ChatGPT):** Sign up at [platform.openai.com](https://platform.openai.com) and create an API key
+
+Store your key securely:
+
+```bash
+# Add to your shell profile (~/.zshrc or ~/.bashrc)
+export ANTHROPIC_API_KEY="your-key-here"
+# or
+export OPENAI_API_KEY="your-key-here"
+```
+
+::: {.callout-warning}
+**Never commit API keys to Git.** The `.gitignore` file in this repo is configured to exclude `.env` files, but always double-check before pushing.
+:::
+
+## Troubleshooting
+
+- **`conda` not found after install:** Restart your terminal, or run `source ~/.zshrc` (macOS) / `source ~/.bashrc` (Linux).
+- **Permission errors on macOS:** Try `chmod +x Miniconda3-latest-*.sh` before running the installer.
+- **Jupyter can't find the environment:** Run `conda activate aisocsci` then `python -m ipykernel install --user --name aisocsci --display-name "AI SocSci"`.
+
+If you run into issues, bring your laptop to the first class — we'll troubleshoot together during the lab session.

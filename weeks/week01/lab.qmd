@@ -1,0 +1,683 @@
+---
+title: "Lab 1: Introduction & Set-up"
+subtitle: "Week 1 · AI for Social Science Research"
+format:
+  html:
+    code-fold: false
+    code-tools: true
+    toc: true
+---
+
+# Overview
+
+Today's lab covers foundational tools and concepts you'll use throughout the course:
+
+1. Data management rules
+2. Version control with Git
+3. Command-line interface (CLI) basics
+4. Python — what it is and how it compares to R
+5. Conda — managing environments
+6. Jupyter Notebook — notebooks vs. scripts
+7. Basic data wrangling & machine learning in Python
+
+---
+
+# 1. Data Management Rules
+
+Before we start writing code, let's talk about protecting your work — and your data.
+
+## The 3-2-1 Rule
+
+![The 3-2-1 Rule](images/321Rule_nyu.png){width="600"}
+
+
+A foundational principle of data storage and backup:
+
+- **3** copies of your data
+- **2** different storage media (e.g., local drive + cloud)
+- **1** offsite backup (e.g., Google Drive, OneDrive, external hard drive stored elsewhere)
+
+For more details, see NYU's guide on [data storage and backup](https://guides.nyu.edu/data_management/storage-backup).
+
+Also worth reading: ["11 ways to avert a data-storage disaster" (Nature 2019)](https://www-nature-com.proxy.libraries.rutgers.edu/articles/d41586-019-01040-w).
+
+::: {.callout-tip}
+## Practice
+Write down what your 3-2-1 locations will be. For example:
+
+- **3 copies:** laptop, Google Drive, external hard drive
+- **2 media:** SSD (laptop) + cloud (Google Drive)
+- **1 offsite:** Google Drive (accessible from anywhere)
+
+Make sure to deploy your 3-2-1 backup plan after class!
+:::
+
+## Sandbox Environments for AI-Assisted Research
+
+When working with AI coding assistants (like Claude Code, GitHub Copilot, or ChatGPT), they can read and write files on your machine. This is powerful — but risky.
+
+::: {.callout-warning}
+## Why sandboxing matters
+AI tools that have access to your filesystem can accidentally delete, overwrite, or corrupt important files. There are documented cases of AI assistants modifying files outside the intended project directory.
+:::
+
+**Best practices:**
+
+- Use a **dedicated project directory** — don't give AI tools access to your entire home folder
+- Use **version control (Git)** so you can always revert unwanted changes
+- Use **conda environments** so package installations are isolated
+- If using AI agents with filesystem access, configure them to operate within a **sandbox** (a restricted directory)
+
+Think of it like a lab safety protocol: you don't give an untrained assistant unrestricted access to the entire lab.
+
+::: {.callout-tip}
+## Practice
+If you have already installed [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [Codex](https://openai.com/index/codex/), check that your sandbox/permissions mode is configured:
+
+**Claude Code:**
+
+```bash
+# Check your current permissions settings
+claude config list
+# Ensure you are not running in "trust all" mode for untrusted projects
+```
+
+**Codex (OpenAI):**
+
+```bash
+# Codex runs in a sandboxed environment by default.
+# Verify by checking the config:
+codex --help
+```
+
+If you haven't installed either yet, no worries — we'll use them later in the course.
+:::
+
+---
+
+# 2. Version Control
+
+## What is version control and why do we need it?
+
+Version control is a system that records changes to files over time so you can recall specific versions later.
+
+**The problem it solves:**
+
+```
+analysis_final.R
+analysis_final_v2.R
+analysis_FINAL_really_final.R
+analysis_FINAL_really_final_fixed.R
+```
+
+**The solution:** Git tracks every change to every file with timestamps and descriptions. You can always go back to any previous state.
+
+**For social science research:** Your code is part of your methods section. It should be as carefully managed as your data.
+
+This section draws from the [Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/01-basics.html) lesson — an excellent free resource.
+
+::: {.callout-tip}
+## Practice
+1. **Install Git** (if you haven't already — see the [Setup Guide](../../setup.qmd))
+2. **Sign up for [GitHub](https://github.com)** (use your university email for free GitHub Pro via [GitHub Education](https://education.github.com))
+3. **Check your Git version:**
+
+```bash
+git --version
+```
+
+4. **Create and clone your first repo:**
+    - Go to [github.com](https://github.com) → click **New** (green button) → name it something like `my-first-repo` → check "Add a README" → click **Create repository**
+    - Clone it to your local machine:
+
+```bash
+cd ~/Documents   # or wherever you want to keep it
+git clone https://github.com/YOUR-USERNAME/my-first-repo.git
+cd my-first-repo
+```
+:::
+
+## Key Git concepts
+
+- **Repository (repo)** — a project folder tracked by Git
+- **Commit** — a snapshot of your project at a point in time, with a message
+- **Branch** — a parallel version of your project (for experiments)
+- **Push/Pull** — sync your local repo with GitHub
+
+**Basic workflow:**
+
+```bash
+git add .                              # stage your changes
+git commit -m "Add week 1 analysis"    # save a snapshot
+git push origin main                   # upload to GitHub
+```
+
+::: {.callout-tip}
+## Practice
+Try making a local change and committing it to your repo:
+
+1. Open the `README.md` file in a text editor and add a line (e.g., "This is my first repo for AI & Social Science Research.")
+2. Save the file, then run:
+
+```bash
+git status                          # see what changed
+git add README.md                   # stage the change
+git commit -m "Update README"       # commit locally
+git push origin main                # push to GitHub
+```
+
+3. Go to your repo on GitHub in a browser — you should see the updated README!
+:::
+
+## GitHub as a research platform
+
+GitHub is not just for software developers:
+
+- **Public repos** for sharing replication code and data
+- **README files** as documentation
+- **Issues** for tracking tasks
+- **GitHub Pages** for hosting websites — this course site is built this way!
+
+::: {.callout-tip}
+## Practice
+If you don't like CLI, you can also use GitHub's desktop interface to manage your repositories. You can download it [here](https://desktop.github.com/). 
+:::
+---
+
+# 3. Command-Line Interface (CLI)
+
+## What is the CLI?
+
+The **command-line interface** (also called the terminal, shell, or console) is a text-based way to interact with your computer — instead of clicking through folders, you type commands.
+
+**Where to find it:**
+
+| OS | Application | Default Shell |
+|---|---|---|
+| **macOS** | Terminal (in Applications → Utilities) or iTerm2 | zsh |
+| **Windows** | PowerShell, Command Prompt, or Windows Terminal. For this course: Git Bash (installed with Git for Windows) or [WSL](https://learn.microsoft.com/en-us/windows/wsl/) | varies |
+| **Linux** | Terminal (usually Ctrl+Alt+T) | bash |
+
+::: {.callout-tip}
+## Practice
+Open your CLI now:
+
+- **macOS:** Open **Terminal** (Applications → Utilities → Terminal), or press `Cmd + Space`, type "Terminal", and hit Enter
+- **Windows:** Open **Git Bash** (installed with Git for Windows) — search for "Git Bash" in the Start menu. Alternatively, open **PowerShell** or install [Windows Terminal](https://aka.ms/terminal)
+- **Linux:** Press `Ctrl + Alt + T` or search for "Terminal" in your applications
+:::
+
+## Why do we need it?
+
+- **Git** runs from the command line
+- **Python** and **conda** are managed from the command line
+- **Reproducibility** — a script of commands is more reproducible than a series of mouse clicks
+- **Remote servers** — if you ever work on a cluster or cloud machine, CLI is the only interface
+
+**Essential commands:**
+
+```bash
+pwd                  # print working directory (where am I?)
+ls                   # list files in current directory
+cd folder_name       # change directory
+cd ..                # go up one level
+mkdir new_folder     # create a new directory
+```
+
+::: {.callout-tip}
+## Practice
+Try navigating to your local Git repo folder and listing the files:
+
+```bash
+pwd                                 # where am I?
+cd ~/Documents/my-first-repo        # navigate to your repo (adjust path as needed)
+pwd                                 # confirm you're in the right place
+ls                                  # list files — you should see README.md
+ls -la                              # list all files including hidden ones — you should see .git/
+```
+
+The `.git/` folder is where Git stores all its tracking information. Don't modify it directly!
+:::
+
+---
+
+# 4. Python
+
+## What is Python?
+
+Python is a general-purpose programming language widely used in data science, machine learning, web development, and scientific computing. It is the primary language for working with LLMs and genAI tools.
+
+## Python vs. R: A Quick Comparison
+
+Most of you are familiar with R. Here's how Python compares:
+
+| | R | Python |
+|---|---|---|
+| **Strength** | Statistical analysis, visualization | General-purpose, ML/AI, web, automation |
+| **Data frames** | Built-in `data.frame`, `tibble` | `pandas` library |
+| **Visualization** | `ggplot2` | `matplotlib`, `seaborn`, `plotly` |
+| **ML ecosystem** | `caret`, `tidymodels` | `scikit-learn`, `PyTorch`, `TensorFlow` |
+| **LLM/AI tools** | Limited | Extensive — `openai`, `anthropic`, `transformers`, `langchain` |
+| **Package manager** | `install.packages()` | `pip install` or `conda install` |
+| **IDE** | RStudio | VS Code, Jupyter, PyCharm |
+| **Indexing** | 1-based | 0-based |
+| **Assignment** | `<-` or `=` | `=` |
+
+**Bottom line:** R is excellent for statistics and visualization; Python is the lingua franca for AI/ML. This course uses Python because the AI tools we'll use are built in Python.
+
+::: {.callout-tip}
+## Practice
+Install Python (if you haven't already) and try running it from the CLI:
+
+1. **Check if Python is already installed:**
+
+```bash
+python3 --version
+```
+
+If you see `Python 3.x.x`, you're good. If not, we'll install it via conda in the next section.
+
+2. **Try the Python interactive interpreter:**
+
+```bash
+python3
+```
+
+3. **Run some simple operations in the Python prompt (`>>>`):**
+
+```python
+# Numeric operations
+2 + 3
+10 / 3
+2 ** 10
+
+# Strings
+print("Hello, sociology!")
+name = "Rutgers"
+print(f"Welcome to {name}!")
+
+# Exit the interpreter
+exit()
+```
+:::
+
+---
+
+# 5. Conda
+
+## What is conda and why do we need it?
+
+**Conda** is a package and environment manager. It solves two problems:
+
+1. **Package management** — installs Python libraries and their dependencies correctly
+2. **Environment isolation** — lets you create separate environments for different projects, so they don't interfere with each other
+
+Think of it like having separate lab benches for different experiments — reagents from one don't contaminate the other.
+
+::: {.callout-tip}
+## Practice
+Set up the course environment:
+
+1. **Install Miniconda** if you haven't already — see the [Setup Guide](../../setup.qmd) for platform-specific instructions.
+
+2. **Create the course environment:**
+
+```bash
+conda create -n aisocsci python=3.11 -y
+```
+
+3. **Activate it:**
+
+```bash
+conda activate aisocsci
+```
+
+You should see `(aisocsci)` appear at the beginning of your terminal prompt. You'll run this command each time you work on course materials.
+
+4. **Install core packages:**
+
+```bash
+pip install jupyter pandas numpy matplotlib seaborn scikit-learn
+pip install openai anthropic
+```
+
+5. **Verify:**
+
+```bash
+python --version     # Should show Python 3.11.x
+conda list           # Should show the packages you just installed
+```
+:::
+
+---
+
+# 6. Jupyter Notebook
+
+## What is Jupyter Notebook?
+
+Jupyter Notebook is an interactive computing environment that lets you combine:
+
+- **Code cells** — write and run Python code
+- **Markdown cells** — write formatted text, equations, images
+- **Output** — see results, tables, and plots inline
+
+It's named after three languages: **Ju**lia, **Py**thon, **R** — though we'll use it with Python.
+
+## Notebooks vs. Python scripts
+
+| | Jupyter Notebook (`.ipynb`) | Python script (`.py`) |
+|---|---|---|
+| **Best for** | Exploration, teaching, reports | Production code, automation, packages |
+| **Execution** | Cell by cell, interactive | Top to bottom |
+| **Output** | Inline (tables, plots) | Console only (unless saved) |
+| **Version control** | Messy diffs (JSON format) | Clean diffs (plain text) |
+
+**In this course:** We use Jupyter for labs (interactive exploration). As you advance, you'll increasingly write `.py` scripts for reusable code.
+
+**Launch Jupyter:**
+
+```bash
+conda activate aisocsci
+jupyter notebook
+```
+
+::: {.callout-tip}
+## Practice
+*Coming soon — we'll practice Jupyter in the data wrangling section below.*
+:::
+
+---
+
+# 7. Basic Data Wrangling & ML in Python
+
+## 7.1 Loading packages and data
+
+```python
+# Import libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
+
+In Python, you import libraries at the top of your script. Compare to R:
+
+| Python | R |
+|---|---|
+| `import pandas as pd` | `library(tidyverse)` |
+| `pd.read_csv("file.csv")` | `read_csv("file.csv")` |
+| `df.head()` | `head(df)` |
+| `df.describe()` | `summary(df)` |
+
+## 7.2 Creating and inspecting data
+
+```python
+# Create a synthetic dataset (in future labs we'll use real data)
+np.random.seed(42)
+n = 500
+
+data = pd.DataFrame({
+    'age': np.random.randint(18, 85, n),
+    'education_years': np.random.randint(8, 21, n),
+    'income_category': np.random.choice(['low', 'middle', 'high'], n, p=[0.3, 0.5, 0.2]),
+    'region': np.random.choice(['northeast', 'midwest', 'south', 'west'], n),
+    'supports_policy': np.random.binomial(1, 0.55, n),
+})
+
+# Inspect
+print(f"Shape: {data.shape}")  # rows, columns
+data.head()
+```
+
+```python
+# Check variable types
+data.dtypes
+```
+
+```python
+# Basic descriptive statistics
+data.describe()
+```
+
+```python
+# Value counts for categorical variables
+data['income_category'].value_counts()
+```
+
+## 7.3 Basic visualization
+
+```python
+# Histogram
+fig, ax = plt.subplots(figsize=(8, 4))
+ax.hist(data['age'], bins=20, edgecolor='white', color='#CC0033')
+ax.set_xlabel('Age')
+ax.set_ylabel('Count')
+ax.set_title('Distribution of Age')
+plt.tight_layout()
+plt.show()
+```
+
+```python
+# Bar plot
+fig, ax = plt.subplots(figsize=(8, 4))
+data['income_category'].value_counts().plot(kind='bar', ax=ax, color='#CC0033', edgecolor='white')
+ax.set_ylabel('Count')
+ax.set_title('Income Category Distribution')
+ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
+plt.tight_layout()
+plt.show()
+```
+
+## 7.4 Functions in Python
+
+In Python, functions are defined with `def`. Compare to R:
+
+:::: {.columns}
+::: {.column width="50%"}
+**Python:**
+
+```python
+def calculate_mean(values):
+    """Calculate the mean of a list."""
+    return sum(values) / len(values)
+
+calculate_mean([1, 2, 3, 4, 5])
+```
+:::
+::: {.column width="50%"}
+**R equivalent:**
+
+```r
+calculate_mean <- function(values) {
+  mean(values)
+}
+
+calculate_mean(c(1, 2, 3, 4, 5))
+```
+:::
+::::
+
+Key differences: Python uses `def`, indentation defines blocks (no curly braces), and `return` is explicit.
+
+## 7.5 Statistics & ML: Translating Concepts
+
+You can think of many statistical concepts you already know from an ML perspective:
+
+| Statistics | Machine Learning |
+|---|---|
+| Regression model | Model |
+| Residuals (SSE, MSE) | Loss |
+| Predicted vs. observed | Evaluation |
+| Independent variables (IVs) | Features |
+| Dependent variable (DV) | Label |
+| Model fit (R², AIC) | Model performance (accuracy, F1) |
+
+**ML defined:** The process of training a piece of software (a *model*) to make useful predictions or generate content from data.
+
+## 7.5 Statistics & ML (cont.)
+
+**Key ML concepts:**
+
+A **dataset** is characterized by its *size* (number of examples/rows) and *diversity* (range of variation). Good datasets are both large and diverse.
+
+Datasets with more **features** can help a model discover additional patterns — but not always. Some features may have no causal relationship to the label.
+
+. . .
+
+The model's goal is to learn a mapping (a "black box") that best predicts labels from features.
+
+Based on the difference between predicted and actual values — the **loss** — the model gradually updates its solution.
+
+. . .
+
+**Evaluation:** We give the model only the features from a held-out test set, then compare its predictions to the true labels.
+
+## 7.6 Supervised vs. Unsupervised ML
+
+:::: {.columns}
+::: {.column width="50%"}
+**Supervised learning**
+
+- You have labeled data (features + known labels)
+- Goal: learn to predict the label
+- Examples: logistic regression, random forest, neural networks
+- Social science: classifying text sentiment, predicting survey responses
+
+:::
+::: {.column width="50%"}
+**Unsupervised learning**
+
+- No labels — only features
+- Goal: discover structure or patterns
+- Examples: k-means clustering, topic models, PCA
+- Social science: discovering latent topics in text, grouping respondents
+
+:::
+::::
+
+## 7.7 Practice: Supervised ML
+
+Let's train a classifier: **Can we predict policy support from demographics?**
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Prepare features (encode categoricals as dummy variables)
+features = pd.get_dummies(data[['age', 'education_years', 'income_category', 'region']], drop_first=True)
+target = data['supports_policy']
+
+# Split into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(
+    features, target, test_size=0.3, random_state=42, stratify=target
+)
+print(f"Training: {X_train.shape[0]} rows | Test: {X_test.shape[0]} rows")
+```
+
+```python
+# Fit a logistic regression
+model = LogisticRegression(max_iter=1000, random_state=42)
+model.fit(X_train, y_train)
+
+# Evaluate
+y_pred = model.predict(X_test)
+print(f"Test accuracy: {model.score(X_test, y_test):.3f}\n")
+print("Classification Report:")
+print(classification_report(y_test, y_pred, target_names=['Oppose', 'Support']))
+```
+
+```python
+# Visualize coefficients
+coefs = pd.DataFrame({
+    'feature': features.columns,
+    'coefficient': model.coef_[0]
+}).sort_values('coefficient')
+
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.barh(coefs['feature'], coefs['coefficient'], color='#CC0033')
+ax.set_xlabel('Coefficient (log-odds)')
+ax.set_title('Logistic Regression: Predictors of Policy Support')
+ax.axvline(x=0, color='gray', linestyle='--', linewidth=0.8)
+plt.tight_layout()
+plt.show()
+```
+
+## 7.8 Practice: Unsupervised ML
+
+Now let's try clustering — no labels, just discovering structure.
+
+```python
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+# Use only numeric features for clustering
+numeric_features = data[['age', 'education_years']].copy()
+
+# Standardize (important for distance-based methods)
+scaler = StandardScaler()
+scaled = scaler.fit_transform(numeric_features)
+
+# K-means clustering with 3 clusters
+kmeans = KMeans(n_clusters=3, random_state=42, n_init=10)
+data['cluster'] = kmeans.fit_predict(scaled)
+
+print("Cluster sizes:")
+print(data['cluster'].value_counts().sort_index())
+```
+
+```python
+# Visualize the clusters
+fig, ax = plt.subplots(figsize=(8, 6))
+scatter = ax.scatter(data['age'], data['education_years'],
+                     c=data['cluster'], cmap='Set1', alpha=0.6, s=30)
+ax.set_xlabel('Age')
+ax.set_ylabel('Years of Education')
+ax.set_title('K-Means Clustering: Age × Education')
+plt.colorbar(scatter, label='Cluster', ax=ax)
+plt.tight_layout()
+plt.show()
+```
+
+```python
+# Profile the clusters
+print("Cluster profiles:")
+print(data.groupby('cluster')[['age', 'education_years']].mean().round(1))
+```
+
+::: {.callout-note}
+## Discussion
+- What do the clusters represent substantively? Do they correspond to meaningful social groups?
+- How would you decide how many clusters to use?
+- How is this different from the supervised model above — what can each approach tell you?
+:::
+
+---
+
+# Wrap-Up
+
+## Before Next Week
+
+1. **Finish** [Think Python](https://allendowney.github.io/ThinkPython/index.html) if you haven't already
+2. **Watch** 3Blue1Brown: [Transformers, the Tech behind LLMs](https://youtu.be/wjZofJX0v4M) (27 min)
+3. **Complete** Google ML Crash Course: [Classification](https://developers.google.com/machine-learning/crash-course/classification)
+4. **Read** the four required readings for Week 2:
+    - Kozlowski, Taddy, & Evans (2019) — word embeddings
+    - Stuhler (2022) — text parsers
+    - Karell & Freedman (2019) — rhetorics of radicalism
+    - Lai et al. (2024) — political YouTube videos
+
+## Submitting Your Lab
+
+Save your completed Jupyter notebook and submit it:
+
+```bash
+# Option 1: push to your own GitHub
+git add .
+git commit -m "Complete lab 1"
+git push origin main
+
+# Option 2: email notebook to instructor
+```
+
+If you need extra time, submit by email before the next class.

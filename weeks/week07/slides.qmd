@@ -1,0 +1,12 @@
+---
+title: "Week 7: Student Final Project Presentations"
+subtitle: "AI for Social Science Research"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: fade
+    width: 1600
+    height: 900
+---
+

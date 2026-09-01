@@ -1,0 +1,284 @@
+---
+title: "Syllabus"
+---
+
+## Course Details
+
+- **Course Number, Title and Term:** 16:920:574:M1 Topics in Sociology: AI and Social Science Research, Fall 2026 (7-Week Minicourse)
+- **Offered by:** [Department of Sociology](https://sociology.rutgers.edu), School of Arts and Sciences, Rutgers University - New Brunswick
+- **Instructor:** Dr. Di Zhou (she/her), Assistant Professor of Sociology, [di.zhou@rutgers.edu](mailto:di.zhou@rutgers.edu)
+- **Meetings:** Wednesdays, 2:00–4:40 PM (ET) at Davison 128, from Sep. 2nd to Oct. 14th, 2026
+- **Office Hours:** Wednesdays, 1:00–2:00 PM (ET) at Davison 137, [sign-up here](https://calendar.app.google/JRY6bzeHvYBcftX59) 
+
+# Course Description
+
+In just three years, the use of generative AI in both daily life and scientific research has taken off. This course provides a compact introduction to the basics of generative AI models and how generative AI (genAI), as a research tool, has been applied in social science research.
+
+The course is designed for graduate-level students who are either in the explorative or analytical phase of their research and interested in understanding cutting-edge applications of this technology as research tools.
+
+We will begin with a brief introduction to genAI, and survey the usage and debate of the application of genAI in computational, quantitative, and qualitative sociological research. Throughout the minicourse, students have the opportunity to test different applications of genAI for their own research interests. At the end of the course, students are expected to understand the state of genAI applications for social science research, how to incorporate genAI into their own research practice, and the strengths and weaknesses of this technology for their particular research interests.
+
+Although we will mostly work with the Python programming language and you will encounter various statistical models across course readings, Python proficiency is not a requirement for taking the class. The goal of the class is to provide a general survey and intuitive understanding of the technicals of genAI. However, it is strongly advised that students who pursue further research using LLMs or genAI gain systematic and rigorous training in Python and advanced statistical and machine learning methods.
+
+# Learning Objectives
+
+The goal of the course is three-fold. Students are expected to:
+
+1. Have a general understanding of the current applications of genAI tools in sociological research, and form their own evaluations on the effectiveness of such applications.
+2. Understand how they can incorporate genAI tools for their own research interests.
+3. Understand what genAI can and cannot do for producing high-quality research.
+
+# Prerequisites
+
+Basic knowledge in Python and statistics are preferred but not required.
+
+Students should **bring their laptops to class** for lab sessions.
+
+Students are **required to get [Claude Pro](https://claude.ai/upgrade) or [ChatGPT Plus](https://chatgpt.com/pricing/)** in order to practice/test the autoresearch workflows. Each plan is priced at $20 per month. To minimize spending, you can sign up around mid-September to mid-October (for 1 month) just for learning and usage in this minicourse.
+
+# Structure of the Course
+
+The course is structured to have lectures, reading presentations, discussions, and labs. We will go through the technical foundations in the first two weeks, covering the basic data science workflow (setting up version control on GitHub and coding environment on your device), intuitive understanding of machine learning, and a review of computational methods in the pre-LLM era. From Weeks 3 to 6, we will go over four different themes in the realm of LLM sociological research: LLM annotations, genAI used as social subjects and in survey experiments, autoresearch, and genAI in qualitative research. Week 7 is reserved for final project presentations.
+
+# Assessment and Grading
+
+| Component | Weight |
+|---|---|
+| Participation | 15% |
+| Lab Assignments | 15% |
+| Reading Presentation | 20% |
+| Final Project Presentation | 20% |
+| Final Project Deliverables | 30% |
+
+A: 90–100%, B: 80–89%, C: 70–79%, D: 60–69%, F: Below 60%
+
+## Participation
+
+Students are expected to attend weekly class meetings, contribute to class discussions by asking questions or sharing their thoughts on the reading materials (you can use the **guiding questions** listed in the syllabus as a start), and engage with other participants.
+
+## Lab Assignments
+
+In most weeks, our class will have a lab session where students are expected to run relevant coding or LLM application exercises on their own device. Students are expected to **complete those exercises in class.** However, if you need extra time, you can complete them on your own and submit the Jupyter notebooks and/or other deliverables to the instructor in order to receive credit.
+
+## Reading Presentation
+
+**In Weeks 3, 4, 5, and 6, students will form groups of two to three to prepare a presentation explaining and connecting the reading materials based on the guiding questions on the syllabus.** The presentation should be about 20 minutes long. You are expected to share your presentation slides with the class after your presentation. Even if you are not presenting for that week, I strongly recommend you use the guiding questions to write paper notes or memos, which will be useful for future reference.
+
+## Minicourse Final Project
+
+Even though this is a short course, students are expected to **complete either a project proposal or a mini course project** to demonstrate their grasp of genAI for social science research. If you are early in the program and have research ideas that you want to develop, this is a great chance to use this assignment to materialize your research ideas. If you are already in the weeds of data analysis of your research project, you can use this as a chance to test out the application of genAI tools in the research process.
+
+The research project needs to fulfill at least one of the following requirements:
+
+1. The research uses genAI/LLM as part of its research methods.
+2. The research is about the usage or applications of genAI/LLM.
+3. The research tests/pilots the use of genAI/LLM tools for parts of the research workflow.
+
+If you opt for project type (1) or (2), you should submit a **project proposal** that lays out the motivation, research question, and research design, with an optional section on preliminary results. The proposal should be at least 8 pages (double-spaced, 12 pt font). If you opt for project type (3), you should submit a **project report** detailing the motivation and implementation of genAI/LLM tools for your research (about 5 pages), and a reflection on the strengths, limitations, and ethical concerns you have in the application of the genAI tools (about 5 pages). You will also be asked to submit relevant code files, project memos, agent skills, and other files generated in the process as an appendix to your report.
+
+On Week 7, each student will do an individual presentation on their final project. Each presentation should be about 10 minutes long, followed by a 5 minute Q&A.
+
+On Week 4 and 6, we will allocate some time at the end of our meetings as project co-work sessions where you work on your projects while I am available for questions.
+
+# AI Usage Policy
+
+Although this class is devoted to learning how to use genAI tools and incorporate genAI/LLM into social science research, **AI writing is strictly banned in this class. You are not allowed to use AI to generate any of the writing assignments for this course.** Writing and thinking are intrinsically linked, and the process of finding the language to express your ideas (even if it is summarizing others' argument) is essential for producing original and creative research.
+
+I understand that if English is your second language (which is the case for me), you might lack confidence in the quality of your writing. **You can use AI tools (or Grammarly) to correct the following grammar mistakes: subject–verb agreement, verb tense consistency within a clause, pronoun–antecedent agreement, article errors, and spelling errors. However, you cannot use AI to polish or rewrite any part of your writing assignments.** It is okay if your sentence is rough. I'd rather you write them down than delegate writing tasks to AI.
+
+A particular challenge in responsible AI use in higher education is *enforcement*. While there are plenty of AI detection tools (GPTZero, Turn-It-In, Pangram, ...), there is no guarantee that they will not make mistakes, and any false positives will likely result in unfair accusation. Therefore, **you are responsible to follow this AI policy on your own**.
+
+Usage of genAI as a tool to support your research process is generally permitted. The general rule of thumb is **not to automate the process of learning, thinking, and writing to AI,** which means you should always read and puzzle with the literature yourself, rather than let an LLM summarize it for you without reading it directly. You are also held responsible to your research design and every analytical decision made along the way, regardless of whether it is made by you or your AI agents.
+
+# Learning Resources
+
+An important aspect of graduate-level study is independent learning. While this course is great as an introduction to basic concepts, we will not be able to spend enough time to cover the many important topics and concepts in genAI. Luckily, there are many resources available to you that cover the important foundations:
+
+- [Google Machine Learning Education](https://developers.google.com/machine-learning) — free ML courses; we utilize parts of it in this course
+- [*An Introduction to Statistical Learning*](https://www.statlearning.com/) — a free, excellent textbook on statistical learning with applications in both R and Python, with free online courses
+- [Rutgers LinkedIn Learning: AI Skills](https://it.rutgers.edu/ai/building-ai-skills-with-linkedin-learning/) — free access for Rutgers students
+- [Andrej Karpathy's educational resources](https://karpathy.ai/) — two tracks for both technical and general audiences
+- [Neural Networks Lessons on 3Blue1Brown](https://www.3blue1brown.com/?topic=neural-networks) — one of the best visual explainers; we will utilize one lesson in this course
+- [Rutgers NB Library Graduate Specialist Program](https://libguides.rutgers.edu/graduatespecialist) — workshops and consultancy on data science, GIS, qualitative analysis, etc.
+
+# Course Expectations and Policies
+
+## Mutual Respect and Privacy
+
+In this course, we will encounter a variety of important debates pertaining to the use and impacts of new technologies. Some may touch on contentious subjects and/or spotlight harms that may be especially concentrated within certain communities. I expect students to engage with each other's perspectives respectfully and constructively. I hope that discussions will be rigorous, but also ask that we work together to build an inclusive classroom environment.
+
+In the interest of creating a comfortable environment for sharing questions, ideas, and experiences in class discussions, I ask that you not make any digital recordings (audio, photographic, or video) of others without their consent during class time, unless that is part of your academic accommodations. Also, check in with me before sharing any course materials with others outside of this class.
+
+## Academic Integrity
+
+Academic integrity means that the work you submit is original. See Rutgers University–New Brunswick's [Academic Integrity Policy](https://nbacademicintegrity.rutgers.edu). You should also follow this course's AI policy.
+
+## Office Hours and Email Availability
+
+I will hold office hours at the times listed at the top of this syllabus. If these times don't work for you, please email me to arrange an alternate time. As a general practice, I will respond to emails within 24 hours during the week. If I do not respond within two business days, please send me an email as a reminder.
+
+## Accommodations
+
+Students who require accommodation to level the playing field can contact the [Rutgers Office of Disability Services (ODS)](https://ods.rutgers.edu). However, I also recognize that not all forms of challenges may receive official accommodations and navigating university bureaucracy can be difficult. Please reach out to me at any time and let me know how I can support you to make course requirements and challenges manageable.
+
+## Wellness Statement
+
+In a large, complex community like Rutgers University, it is vital to reach out to others, particularly those who are isolated or engaged in self-destructive activities. Student wellness is the responsibility of us all. [Rutgers Counseling, ADAP & Psychiatric Services (CAPS)](https://health.rutgers.edu/counseling-services) (848-932-7402) is the office responsible for the overall health and mental health needs of Rutgers–New Brunswick students. For 24/7 crisis support and additional resources, see [go.rutgers.edu/mentalhealthresources](http://go.rutgers.edu/mentalhealthresources).
+
+# Course Schedule
+
+*\*Please bring your laptop to class for lab sessions!*
+
+## Week 1. Sep. 2nd. Introduction & Set-up
+
+*Format: Lecture | Lab*
+
+### Pre-class self-learning:
+
+- Google ML Courses: [Intro to ML](https://developers.google.com/machine-learning/intro-to-ml)
+- [Think Python](https://allendowney.github.io/ThinkPython/index.html) — a short book on Python coding basics; if you are new to the programming language, try to complete the book in the first two weeks of class.
+- [Version Control with Git — Software Carpentry](https://swcarpentry.github.io/git-novice/index.html)
+
+### Readings:
+
+1. Davidson, Thomas, and Daniel Karell. 2025. "Integrating Generative Artificial Intelligence into Social Science Research: Measurement, Prompting, and Simulation." *Sociological Methods & Research* 54(3):775–93. [doi:10.1177/00491241251339184](https://doi.org/10.1177/00491241251339184).
+
+### Readings (skim):
+
+1. Siler, Kyle. 2026. "The Diffusion of Large Language Models in Published Academic Articles." *Proceedings of the National Academy of Sciences* 123(22):e2605754123. [doi:10.1073/pnas.2605754123](https://doi.org/10.1073/pnas.2605754123).
+2. Cao, Likun. 2026. "Visualizing the Adoption of Large Language Models across Sociology Subfields." *Socius* 12:23780231261460657. [doi:10.1177/23780231261460657](https://doi.org/10.1177/23780231261460657).
+
+**Lecture:** Overview of the course, getting to know each other, situating genAI in sociological methodology, basics of statistical learning, version control for replicable social science research.
+
+**Lab:** GitHub, CLI, Jupyter Notebook, Python, conda/sandbox, basic data wrangling & ML models in Python, group up for presentations.
+
+## Week 2. Sep. 9th. Computational Methods before LLM & LLM Technical Basics
+
+*Format: Lecture | Lab*
+
+### Pre-class self-learning:
+
+1. 3Blue1Brown. 2024. *Transformers, the Tech behind LLMs | Deep Learning Chapter 5*. [YouTube](https://youtu.be/wjZofJX0v4M) (27 min).
+2. Google ML Crash Courses: [Classification](https://developers.google.com/machine-learning/crash-course/classification).
+
+### Readings:
+
+1. Kozlowski, Austin C., Matt Taddy, and James A. Evans. 2019. "The Geometry of Culture: Analyzing the Meanings of Class through Word Embeddings." *American Sociological Review* 84(5):905–49. [doi:10.1177/0003122419877135](https://doi.org/10.1177/0003122419877135).
+2. Stuhler, Oscar. 2022. "Who Does What to Whom? Making Text Parsers Work for Sociological Inquiry." *Sociological Methods & Research*. [doi:10.1177/00491241221099551](https://doi.org/10.1177/00491241221099551).
+3. Karell, Daniel, and Michael Freedman. 2019. "Rhetorics of Radicalism." *American Sociological Review* 84(4):726–53. [doi:10.1177/0003122419859519](https://doi.org/10.1177/0003122419859519).
+4. Lai, Angela, Megan A. Brown, James Bisbee, Joshua A. Tucker, Jonathan Nagler, and Richard Bonneau. 2024. "Estimating the Ideology of Political YouTube Videos." *Political Analysis* 32(3):345–60. [doi:10.1017/pan.2023.42](https://doi.org/10.1017/pan.2023.42).
+
+### Optional:
+
+- Khodak, Mikhail, Nikunj Saunshi, Yingyu Liang, Tengyu Ma, Brandon Stewart, and Sanjeev Arora. 2018. "A La Carte Embedding: Cheap but Effective Induction of Semantic Feature Vectors." [arXiv:1805.05388](http://arxiv.org/abs/1805.05388).
+- Rodriguez, Pedro L., Arthur Spirling, and Brandon M. Stewart. 2023. "Embedding Regression: Models for Context-Specific Description and Inference." *American Political Science Review* 117(4):1255–74. [doi:10.1017/S0003055422001228](https://doi.org/10.1017/S0003055422001228).
+- Boutyline, Andrei, and Alina Arseniev-Koehler. 2025. "Meaning in Hyperspace: Word Embeddings as Tools for Cultural Measurement." *Annual Review of Sociology* 51. [doi:10.1146/annurev-soc-090324-024027](https://www.annualreviews.org/content/journals/10.1146/annurev-soc-090324-024027).
+- Bail, Christopher A. 2024. "Can Generative AI Improve Social Science?" *Proceedings of the National Academy of Sciences* 121(21):e2314021121. [doi:10.1073/pnas.2314021121](https://www.pnas.org/doi/10.1073/pnas.2314021121).
+
+**Lecture:** Survey of computational methods before LLM: dictionary, topic modeling, word embeddings, named entity recognition, dependency parsing, supervised & unsupervised ML.
+
+**Lab:** Topic models, word embedding models, parsers, ML models, evaluations.
+
+## Week 3. Sep. 16th. GenAI in Social Science Research: Text, Image, and Video Annotation
+
+*Format: Student Presentation & Discussion | Lecture | Lab*
+
+### Pre-class self-learning:
+
+- Google ML Crash Courses: [Intro to Large Language Models](https://developers.google.com/machine-learning/crash-course/llm).
+
+### Readings:
+
+1. Chae, Youngjin, and Thomas Davidson. 2026. "Large Language Models for Text Classification: From Zero-Shot Learning to Instruction-Tuning." *Sociological Methods & Research* 55(2):501–67. [doi:10.1177/00491241251325243](https://doi.org/10.1177/00491241251325243).
+2. Egami, Naoki, Musashi Hinck, Brandon M. Stewart, and Hanying Wei. n.d. *Using Large Language Model Annotations for the Social Sciences: A General Framework of Using Predicted Variables in Downstream Analyses*. [naokiegami.com/paper/dsl_ss.pdf](https://naokiegami.com/paper/dsl_ss.pdf).
+3. Law, Tina, and Elizabeth Roberto. 2025. "Generative Multimodal Models for Social Science: An Application with Satellite and Streetscape Imagery." *Sociological Methods & Research* 54(3):889–932. [doi:10.1177/00491241251339673](https://doi.org/10.1177/00491241251339673).
+4. Breuer, Adam, Bryce J. Dietrich, Michael H. Crespin, Matthew Butler, J. A. Pryse, and Kosuke Imai. 2025. "Using AI to Summarize US Presidential Campaign TV Advertisement Videos, 1952–2012." *Scientific Data* 12(1):1552. [doi:10.1038/s41597-025-05558-9](https://doi.org/10.1038/s41597-025-05558-9).
+
+### Optional:
+
+- Baumann, Joachim, Paul Röttger, Aleksandra Urman, et al. 2025. "Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation." [arXiv:2509.08825](https://doi.org/10.48550/arXiv.2509.08825).
+- Stuhler, Oscar, Cat Dang Ton, and Etienne Ollion. 2025. "From Codebooks to Promptbooks: Extracting Information from Text with Generative Large Language Models." *Sociological Methods & Research* 54(3):794–848. [doi:10.1177/00491241251336794](https://doi.org/10.1177/00491241251336794).
+
+**Reading & Presentation Guiding Questions:** For 1, 2, 4: What are the research questions? How is LLM/genAI used in the research design? What are the advantages of using genAI vs. conventional computational methods? What are the limitations or weaknesses of using genAI in each research case? For 2: What is DSL? Why does it matter? How to deploy it in research? How would you change the research design for readings 1, 2, and 4 to follow the DSL framework?
+
+**Lecture:** Basics of LLMs; classification & evaluation in using LLM.
+
+**Lab:** Setting up LLM APIs, text annotation with LLM, evaluations.
+
+## Week 4. Sep. 23rd. GenAI in Social Science Research: Simulating Subjects, Interactive Agents, and Survey Experiments
+
+*Format: Student Presentation & Discussion | Lab | Course project co-work*
+
+### Readings:
+
+1. Argyle, Lisa P., Ethan C. Busby, Nancy Fulda, Joshua R. Gubler, Christopher Rytting, and David Wingate. 2023. "Out of One, Many: Using Language Models to Simulate Human Samples." *Political Analysis* 31(3):337–51. [doi:10.1017/pan.2023.2](https://doi.org/10.1017/pan.2023.2).
+2. Bisbee, James, Joshua D. Clinton, Cassy Dorff, Brenton Kenkel, and Jennifer M. Larson. 2024. "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models." *Political Analysis* 32(4):401–16. [doi:10.1017/pan.2024.5](https://doi.org/10.1017/pan.2024.5).
+3. Park, Joon Sung, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. 2023. "Generative Agents: Interactive Simulacra of Human Behavior." [arXiv:2304.03442](https://doi.org/10.48550/arXiv.2304.03442).
+4. Kozlowski, Austin C., and James Evans. 2025. "Simulating Subjects: The Promise and Peril of Artificial Intelligence Stand-Ins for Social Agents and Interactions." *Sociological Methods & Research* 54(3):1017–73. [doi:10.1177/00491241251337316](https://doi.org/10.1177/00491241251337316).
+5. Velez, Yamil Ricardo, and Patrick Liu. 2025. "Confronting Core Issues: A Critical Assessment of Attitude Polarization Using Tailored Experiments." *American Political Science Review* 119(2):1036–53. [doi:10.1017/S0003055424000819](https://doi.org/10.1017/S0003055424000819). Companion tool: [tailoredexperiments.com](https://tailoredexperiments.com/element/).
+
+### Optional:
+
+- Boelaert, Julien, Samuel Coavoux, Étienne Ollion, Ivaylo Petev, and Patrick Präg. 2025. "Machine Bias. How Do Generative Language Models Answer Opinion Polls?" *Sociological Methods & Research* 54(3):1156–96. [doi:10.1177/00491241251330582](https://doi.org/10.1177/00491241251330582).
+- Argyle, Lisa P., Ethan C. Busby, Joshua R. Gubler, et al. 2025. "Testing Theories of Political Persuasion Using AI." *Proceedings of the National Academy of Sciences* 122(18):e2412815122. [doi:10.1073/pnas.2412815122](https://doi.org/10.1073/pnas.2412815122).
+
+**Reading & Presentation Guiding Questions:** What is the "promise and peril" of genAI in its applications as simulating survey subjects, simulating social interactions, and assisting survey experiments? Answer the question by describing the research goals and motivations of this week's readings, and by providing a critical evaluation of the application of LLMs in these research scenarios.
+
+**Lab:** Simulating survey subjects using genAI, simulating interactive agents, tailored experiment tool.
+
+**Course project co-work:** After the lab, we will have a co-work session where you can work on your own research project for this minicourse.
+
+## Week 5. Sep. 30th. GenAI in Social Science Research: Developing & Reflecting on AutoResearch
+
+*Format: Student Presentation & Discussion | Lab | Special Discussion*
+
+### Readings:
+
+1. Alvero, A. J., Dustin S. Stoltz, Oscar Stuhler, and Marshall A. Taylor. 2026. "Generative AI in Sociological Research: State of the Discipline." *Sociological Science* 13:45–62. [doi:10.15195/v13.a3](https://sociologicalscience.com/articles-v13-3-45/).
+2. Zhang, Yongjun. 2026. "Vibe Researching: Can AI Agents with Skills Replace or Augment Social Scientists?" *Chinese Sociological Review* 0(0):1–36. [doi:10.1080/21620555.2026.2707167](https://doi.org/10.1080/21620555.2026.2707167).
+3. Engzell, Per, and Nathan Wilmers. 2026. "The Paper Factory." Preprint, SocArXiv. [osf.io/preprints/socarxiv/24xfq_v1](https://osf.io/preprints/socarxiv/24xfq_v1/).
+4. Yamada, Yutaro, Robert Tjarko Lange, Cong Lu, Chris Lu, Jakob Foerster, and David Ha. n.d. *The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search*. [arXiv:2504.08066](https://arxiv.org/pdf/2504.08066).
+5. (*Read abstract & pp. 143–153 in the paper PDF*) Kosmyna, Nataliya, Eugene Hauptmann, Ye Tong Yuan, et al. 2025. "Your Brain on ChatGPT: Accumulation of Cognitive Debt When Using an AI Assistant for Essay Writing Task." [arXiv:2506.08872](https://arxiv.org/abs/2506.08872).
+
+### Optional:
+
+- Si, Chenglei, Diyi Yang, and Tatsunori Hashimoto. 2024. "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers." [arXiv:2409.04109](https://doi.org/10.48550/arXiv.2409.04109).
+
+### Additional Prep:
+
+Star & skim the following repositories on GitHub:
+
+1. Lee, Byungkyu. 2026. [`letitbk/claude-academic-setup`](https://github.com/letitbk/claude-academic-setup).
+2. nwilmers. 2026. [`nwilmers/paper_factory`](https://github.com/nwilmers/paper_factory).
+3. Zhang, Yongjun. 2026. [`joshzyj/open-scholar-skill`](https://github.com/joshzyj/open-scholar-skill).
+
+**Reading & Presentation Guiding Questions:** What is autoresearch? What are the claimed strengths and motivations for automating research? What are the limitations and caveats of the proposed autoresearch workflow? What is the role of the human researcher in each of the autoresearch workflows (papers 2, 3, 4)? What are the main points of agreement and disagreement in sociology in terms of AI usage? Given the nature of sociological research, what would you propose as responsible use of AI?
+
+**Lab:** Codex, Claude Code, Claude in research/science workflows, skills. Apply an auto-research workflow to "write" a paper of your interest.
+
+**Special Discussion:** Evaluate the quality of your "autoresearch paper," reflect on autoresearch practice, define responsible use of AI for social science research.
+
+## Week 6. Oct. 7th. GenAI in Social Science Research: Qualitative Analysis
+
+*Format: Student Presentation & Discussion | Course project co-work*
+
+### Readings:
+
+1. Jowsey, Tanisha, Virginia Braun, Victoria Clarke, Deborah Lupton, and Michelle Fine. 2025. "We Reject the Use of Generative Artificial Intelligence for Reflexive Qualitative Research." *Qualitative Inquiry*. [doi:10.1177/10778004251401851](https://doi.org/10.1177/10778004251401851).
+2. Ibrahim, Elida Izani, Laura K. Nelson, and Andrea Voyer. 2026. "Should Generative AI Be Used in Reflexive Qualitative Research?" *Qualitative Inquiry*. [doi:10.1177/10778004261456208](https://doi.org/10.1177/10778004261456208).
+3. Timmermans, Stefan, and Iddo Tavory. 2026. "AI and Qualitative Data Analysis: On the Vulnerability of Thematic Analysis and the Importance of Theorizing." *Qualitative Inquiry*. [doi:10.1177/10778004261470128](https://doi.org/10.1177/10778004261470128).
+4. Abramson, Corey M., Tara Prendergast, Zhuofan Li, and Daniel Dohan. 2026. "Qualitative Research in an Era of Artificial Intelligence: A Pragmatic Approach to Data Analysis, Workflow, and Computation." *Annual Review of Sociology* 52:35–61. [doi:10.1146/annurev-soc-011824-104836](https://doi.org/10.1146/annurev-soc-011824-104836).
+
+### Optional:
+
+- Than, Nga, Leanne Fan, Tina Law, Laura K. Nelson, and Leslie McCall. 2025. "Updating 'The Future of Coding': Qualitative Coding with Generative Large Language Models." *Sociological Methods & Research* 54(3):849–88. [doi:10.1177/00491241251339188](https://doi.org/10.1177/00491241251339188).
+
+**Reading & Presentation Guiding Questions:** What leads to the disagreement among qualitative scholars in terms of their stance on using genAI for qualitative research? How can genAI be integrated into the workflow of qualitative research? What is your reflection on the debate?
+
+**Course project co-work:** After the presentation and discussion, we will use the rest of the course time to co-work on your own research project for this minicourse.
+
+## Week 7. Oct. 14th. Final Project Presentation
+
+*Format: Student Presentations*
+
+Your presentation should be about 10 minutes long, followed by a 5 minute Q&A.

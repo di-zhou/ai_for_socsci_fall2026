@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "AI for Social Science Research Course Portal"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Syllabus"
+        href: syllabus.qmd
+
+    right:
+      - icon: github
+        href: https://github.com/dizhou/ai_for_socsci_fall2026
+  sidebar:
+    - title: "Weekly Materials"
+      style: docked
+      contents:
+        - section: "Week 1: Introduction & Set-up"
+          contents:
+            - weeks/week01/slides.qmd
+            - weeks/week01/lab.qmd
+        - section: "Week 2: Computational Methods & LLM Basics"
+          contents:
+            - weeks/week02/slides.qmd
+            - weeks/week02/lab.qmd
+        - section: "Week 3: Text, Image & Video Annotation"
+          contents:
+            - weeks/week03/slides.qmd
+            - weeks/week03/lab.qmd
+        - section: "Week 4: Simulating Subjects & Agents"
+          contents:
+            - weeks/week04/slides.qmd
+            - weeks/week04/lab.qmd
+        - section: "Week 5: AutoResearch"
+          contents:
+            - weeks/week05/slides.qmd
+            - weeks/week05/lab.qmd
+        - section: "Week 6: Qualitative Research"
+          contents:
+            - weeks/week06/slides.qmd
+            - weeks/week06/lab.qmd
+        - section: "Week 7: Final Presentations"
+          contents:
+            - weeks/week07/slides.qmd
+  page-footer:
+    center: "AI for Social Science Research (Fall 2026)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-newwindow: true

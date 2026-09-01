@@ -1,0 +1,10 @@
+---
+title: "Lab 5: Developing & Reflecting on AutoResearch"
+subtitle: "Week 5"
+format:
+  html:
+    code-fold: false
+    code-tools: true
+---
+
+*Content coming soon.*

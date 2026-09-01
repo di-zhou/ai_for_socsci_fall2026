@@ -1,0 +1,15 @@
+---
+title: "Week 6: GenAI and Qualitative Research"
+subtitle: "AI for Social Science Research"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: fade
+    width: 1600
+    height: 900
+---
+
+## Coming Soon {.center}
+
+*Materials will be posted before class.*

@@ -1,0 +1,69 @@
+/* Course site custom styles */
+/* Rutgers Scarlet: #CC0033 */
+
+/* Schedule table styling */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.schedule-table th {
+  background-color: #CC0033;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.schedule-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.schedule-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Badge styling for materials links */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.85em;
+  font-weight: 600;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  margin-right: 0.25rem;
+}
+
+.badge-slides {
+  background-color: #CC0033;
+  color: white;
+}
+
+.badge-lab {
+  background-color: #e04040;
+  color: white;
+}
+
+.badge-slides:hover, .badge-lab:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+/* Remove the double-line effect when a heading sits directly above a table */
+h2 + table,
+h2 + .table-responsive {
+  border-top: none;
+}
+h2:has(+ table),
+h2:has(+ .table-responsive) {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+}
+
+/* Callout box overrides */
+div.callout-note {
+  border-left-color: #CC0033;
+}
