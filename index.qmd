@@ -16,14 +16,14 @@ This is a course portal that provides quick links to weekly lectures and lab mat
 
 ## Schedule
 
-| Week | Topic | Materials |
-|:----:|-------|-----------|
-| 1 | Introduction & Set-up | Slides · Lab |
-| 2 | Computational Methods before LLM & LLM Technical Basics | |
-| 3 | Text, Image, and Video Annotation | |
-| 4 | Simulating Subjects, Interactive Agents & Experiments | |
-| 5 | Developing & Reflecting on AutoResearch | |
-| 6 | GenAI & Qualitative Research | |
-| 7 | Final Project Presentations | |
+| Week | Date | Topic | Materials |
+|:----:|------|-------|-----------|
+| 1 | Sep. 2 | Introduction & Set-up | Slides · [Lab](weeks/week01/lab.qmd) |
+| 2 | Sep. 9 | Computational Methods before LLM & LLM Technical Basics | |
+| 3 | Sep. 16 | Text, Image, and Video Annotation | |
+| 4 | Sep. 23 | Simulating Subjects, Interactive Agents & Experiments | |
+| 5 | Sep. 30 | Developing & Reflecting on AutoResearch | |
+| 6 | Oct. 7 | GenAI & Qualitative Research | |
+| 7 | Oct. 14 | Final Project Presentations | |
 
 

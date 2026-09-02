@@ -10,25 +10,28 @@ format:
 
 # Overview
 
-Today's lab covers foundational tools and concepts you'll use throughout the course:
+Today's lab helps you set up your working environment and learn foundational tools and concepts you'll use throughout the course:
 
 1. Data management rules
-2. Version control with Git
-3. Command-line interface (CLI) basics
+2. Sandbox environments for AI-assisted research
+3. Version control with Git and the command line
 4. Python — what it is and how it compares to R
-5. Conda — managing environments
-6. Jupyter Notebook — notebooks vs. scripts
-7. Basic data wrangling & machine learning in Python
+5. Python development environments: conda, Jupyter Notebook, VS Code, simple scripts editors
+6. Basic data wrangling & machine learning in Python
 
 ---
 
 # 1. Data Management Rules
 
-Before we start writing code, let's talk about protecting your work — and your data.
+Before writing code, we learn about basic data management principles.
 
 ## The 3-2-1 Rule
 
-![The 3-2-1 Rule](images/321Rule_nyu.png){width="600"}
+![](images/321Rule_nyu.png){width="600"}
+
+::: {style="text-align: center; font-size: 0.7em;"}
+Source: [NYU Data Management Guide](https://guides.nyu.edu/data_management/storage-backup)
+:::
 
 
 A foundational principle of data storage and backup:
@@ -52,23 +55,32 @@ Write down what your 3-2-1 locations will be. For example:
 Make sure to deploy your 3-2-1 backup plan after class!
 :::
 
-## Sandbox Environments for AI-Assisted Research
+# 2. Minimizing Data Risks for AI-assisted Research
 
-When working with AI coding assistants (like Claude Code, GitHub Copilot, or ChatGPT), they can read and write files on your machine. This is powerful — but risky.
+- When working with AI coding assistants (like Claude Code, GitHub Copilot, or ChatGPT), they can read and write files on your machine. This increases not only efficiency but also **risks**.
+- While many frontier AI tools have default **"sandbox"** settings that restrict the AI's access to a specific project folder, there have been documented cases where sandbox has failed and **important data has been deleted** by AI agents.
 
-::: {.callout-warning}
-## Why sandboxing matters
-AI tools that have access to your filesystem can accidentally delete, overwrite, or corrupt important files. There are documented cases of AI assistants modifying files outside the intended project directory.
+::: {.callout-warning collapse="true"}
+## Click to read known sandbox failure cases (2026)
+
+1. **Over-scoped credentials:** An agent stays inside the sandbox but finds an overly permissioned API token in the codebase and uses it to execute destructive cloud-side operations the sandbox never restricted. ([The New Stack](https://thenewstack.io/ai-agents-credential-crisis/); [Zenity](https://zenity.io/blog/current-events/ai-agent-database-deletion-pocketos))
+
+2. **Symlink following:** A sandboxed process creates a symbolic link pointing outside the workspace, and the unsandboxed host process follows it when writing — bypassing the boundary without breaking it. ([GitHub Advisory GHSA-vp62-r36r-9xqp](https://github.com/advisories/GHSA-vp62-r36r-9xqp); [NVD CVE-2026-39861](https://nvd.nist.gov/vuln/detail/CVE-2026-39861))
+
+3. **Configuration-based escape:** The agent obeys every sandbox rule but writes a config file that a trusted tool *outside* the sandbox later executes automatically. ([BleepingComputer](https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/);[CSA Research Note](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-sandbox-escapes-20260722-c/))
+
+4. **Autonomous zero-day exploitation:** Given enough inference compute and relaxed safety classifiers, frontier models can independently discover and chain novel vulnerabilities to escape containment entirely. ([OpenAI disclosure](https://openai.com/index/hugging-face-model-evaluation-security-incident/); [Hugging Face technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline))
 :::
+
 
 **Best practices:**
 
-- Use a **dedicated project directory** — don't give AI tools access to your entire home folder
-- Use **version control (Git)** so you can always revert unwanted changes
-- Use **conda environments** so package installations are isolated
-- If using AI agents with filesystem access, configure them to operate within a **sandbox** (a restricted directory)
+The most secure approach is to never give AI tools access to your local machine by either running them in a dedicated computer or configuring a **container** or **virtual machine**. However, the former is often impractical and the latter requires technical expertise. If you have to run AI tools locally, make sure to do the following: 
 
-Think of it like a lab safety protocol: you don't give an untrained assistant unrestricted access to the entire lab.
+- Make **frequent** (recommend daily) backups of your important files to an **external hard drive** or a **cloud storage with version history**.
+- Use AI tools only in **dedicated project directory** — never give AI tools access to your root directory.
+- Check if your AI tool has a **sandbox mode** and ensure it is enabled.
+
 
 ::: {.callout-tip}
 ## Practice
@@ -95,7 +107,30 @@ If you haven't installed either yet, no worries — we'll use them later in the 
 
 ---
 
-# 2. Version Control
+# 3. Version Control & the Command Line
+
+## The command line
+
+The **command-line interface** (CLI, also called the terminal, shell, or console) is a text-based way to interact with your computer — instead of clicking through folders, you type commands. We introduce it here because Git, Python, and most developer tools all run from the command line.
+
+**Where to find it:**
+
+| OS | Application | Default Shell |
+|---|---|---|
+| **macOS** | Terminal (in Applications → Utilities) | zsh |
+| **Windows** | PowerShell, Command Prompt, or Windows Terminal. For this course: Git Bash (installed with [Git for Windows](https://gitforwindows.org/)) or [WSL](https://learn.microsoft.com/en-us/windows/wsl/) | varies |
+| **Linux** | Terminal (usually Ctrl+Alt+T) | bash |
+
+::: {.callout-tip}
+## Practice
+Open your CLI now:
+
+- **macOS:** Open **Terminal** (Applications → Utilities → Terminal), or press `Cmd + Space`, type "Terminal", and hit Enter
+- **Windows:** Open **Git Bash** (installed with [Git for Windows](https://gitforwindows.org/)) — search for "Git Bash" in the Start menu. Alternatively, open **PowerShell** or install [Windows Terminal](https://aka.ms/terminal)
+- **Linux:** Press `Ctrl + Alt + T` or search for "Terminal" in your applications
+:::
+
+We will come back to CLI after setting up Git & GitHub.
 
 ## What is version control and why do we need it?
 
@@ -103,32 +138,57 @@ Version control is a system that records changes to files over time so you can r
 
 **The problem it solves:**
 
-```
-analysis_final.R
-analysis_final_v2.R
-analysis_FINAL_really_final.R
-analysis_FINAL_really_final_fixed.R
-```
+![](images/notfinaldoc.png){width="600"}
+
+::: {style="text-align: center; font-size: 0.7em;"}
+Source: [software carpentry](https://swcarpentry.github.io/git-novice/01-basics.html)
+:::
 
 **The solution:** Git tracks every change to every file with timestamps and descriptions. You can always go back to any previous state.
 
 **For social science research:** Your code is part of your methods section. It should be as carefully managed as your data.
 
-This section draws from the [Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/01-basics.html) lesson — an excellent free resource.
+This section draws from the [Software Carpentry: Version Control with Git](https://swcarpentry.github.io/git-novice/index.html) lesson — an excellent free resource.
 
 ::: {.callout-tip}
 ## Practice
-1. **Install Git** (if you haven't already — see the [Setup Guide](../../setup.qmd))
-2. **Sign up for [GitHub](https://github.com)** (use your university email for free GitHub Pro via [GitHub Education](https://education.github.com))
-3. **Check your Git version:**
 
+**Step 1 — Install Git**
+
+::: {.panel-tabset}
+
+### macOS
 ```bash
-git --version
+# Install via Homebrew (recommended)
+brew install git
+
+# Or install Xcode Command Line Tools
+xcode-select --install
 ```
 
-4. **Create and clone your first repo:**
-    - Go to [github.com](https://github.com) → click **New** (green button) → name it something like `my-first-repo` → check "Add a README" → click **Create repository**
-    - Clone it to your local machine:
+### Windows
+Download and install [Git for Windows](https://gitforwindows.org/).
+
+### Linux
+```bash
+sudo apt-get install git   # Debian/Ubuntu
+sudo dnf install git       # Fedora
+```
+
+:::
+
+Verify: `git --version` should return 2.x or higher.
+
+**Step 2 — Sign up for GitHub**
+
+If you don't already have one, sign up at [github.com](https://github.com). Use your university email for free GitHub Pro access via [GitHub Education](https://education.github.com).
+
+Using your GitHub account, navigate to this course's GitHub repo: [ai_for_socsci_fall2026](https://github.com/di-zhou/ai_for_socsci_fall2026), and click **Star** (top right) to bookmark it.
+
+**Step 3 — Create and clone your first repo**
+
+- Go to [github.com](https://github.com) → click **New** (green button) → name it something like `my-first-repo` → check "Add a README" → click **Create repository**
+- Clone it to your local machine:
 
 ```bash
 cd ~/Documents   # or wherever you want to keep it
@@ -157,9 +217,9 @@ git push origin main                   # upload to GitHub
 Try making a local change and committing it to your repo:
 
 1. Open the `README.md` file in a text editor and add a line (e.g., "This is my first repo for AI & Social Science Research.")
-2. Save the file, then run:
+2. Save the file, make sure you are in your repo directory in your CLI, then run:
 
-```bash
+```bash 
 git status                          # see what changed
 git add README.md                   # stage the change
 git commit -m "Update README"       # commit locally
@@ -179,42 +239,13 @@ GitHub is not just for software developers:
 - **GitHub Pages** for hosting websites — this course site is built this way!
 
 ::: {.callout-tip}
-## Practice
+## Tip
 If you don't like CLI, you can also use GitHub's desktop interface to manage your repositories. You can download it [here](https://desktop.github.com/). 
 :::
----
 
-# 3. Command-Line Interface (CLI)
+## Essential CLI commands
 
-## What is the CLI?
-
-The **command-line interface** (also called the terminal, shell, or console) is a text-based way to interact with your computer — instead of clicking through folders, you type commands.
-
-**Where to find it:**
-
-| OS | Application | Default Shell |
-|---|---|---|
-| **macOS** | Terminal (in Applications → Utilities) or iTerm2 | zsh |
-| **Windows** | PowerShell, Command Prompt, or Windows Terminal. For this course: Git Bash (installed with Git for Windows) or [WSL](https://learn.microsoft.com/en-us/windows/wsl/) | varies |
-| **Linux** | Terminal (usually Ctrl+Alt+T) | bash |
-
-::: {.callout-tip}
-## Practice
-Open your CLI now:
-
-- **macOS:** Open **Terminal** (Applications → Utilities → Terminal), or press `Cmd + Space`, type "Terminal", and hit Enter
-- **Windows:** Open **Git Bash** (installed with Git for Windows) — search for "Git Bash" in the Start menu. Alternatively, open **PowerShell** or install [Windows Terminal](https://aka.ms/terminal)
-- **Linux:** Press `Ctrl + Alt + T` or search for "Terminal" in your applications
-:::
-
-## Why do we need it?
-
-- **Git** runs from the command line
-- **Python** and **conda** are managed from the command line
-- **Reproducibility** — a script of commands is more reproducible than a series of mouse clicks
-- **Remote servers** — if you ever work on a cluster or cloud machine, CLI is the only interface
-
-**Essential commands:**
+Now that you've used the terminal for Git, here are the core navigation commands you'll use throughout the course:
 
 ```bash
 pwd                  # print working directory (where am I?)
@@ -254,7 +285,7 @@ Most of you are familiar with R. Here's how Python compares:
 | | R | Python |
 |---|---|---|
 | **Strength** | Statistical analysis, visualization | General-purpose, ML/AI, web, automation |
-| **Data frames** | Built-in `data.frame`, `tibble` | `pandas` library |
+| **Data frames** | Built-in `data.frame`, `dplyr` | `pandas` library |
 | **Visualization** | `ggplot2` | `matplotlib`, `seaborn`, `plotly` |
 | **ML ecosystem** | `caret`, `tidymodels` | `scikit-learn`, `PyTorch`, `TensorFlow` |
 | **LLM/AI tools** | Limited | Extensive — `openai`, `anthropic`, `transformers`, `langchain` |
@@ -267,34 +298,63 @@ Most of you are familiar with R. Here's how Python compares:
 
 ::: {.callout-tip}
 ## Practice
-Install Python (if you haven't already) and try running it from the CLI:
 
-1. **Check if Python is already installed:**
+**Step 1 — Install Python 3.11**
 
-```bash
-python3 --version
-```
-
-If you see `Python 3.x.x`, you're good. If not, we'll install it via conda in the next section.
-
-2. **Try the Python interactive interpreter:**
+This course requires **Python 3.11**. Check if you already have it:
 
 ```bash
-python3
+python3.11 --version
 ```
 
-3. **Run some simple operations in the Python prompt (`>>>`):**
+If you see `Python 3.11.x`, skip to Step 2. If not, install it:
+
+::: {.panel-tabset}
+
+### macOS
+```bash
+# If you don't have Homebrew yet, install it first:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Then install Python 3.11:
+brew install python@3.11
+```
+
+Or download the 3.11 installer from [python.org](https://www.python.org/downloads/release/python-3119/).
+
+::: {.callout-note}
+macOS ships with an older system Python that is not sufficient for this course. Even if `python3 --version` shows something, install 3.11 explicitly.
+:::
+
+### Windows
+Download and run the **Python 3.11** installer from [python.org](https://www.python.org/downloads/release/python-3119/). **Check "Add Python to PATH"** during installation.
+
+### Linux
+```bash
+sudo apt-get install python3.11 python3.11-venv python3-pip   # Debian/Ubuntu
+sudo dnf install python3.11 python3.11-pip                    # Fedora
+```
+
+:::
+
+**Step 2 — Try the Python interactive interpreter**
+
+```bash
+python3.11
+```
+
+**Run some simple operations in the Python prompt (`>>>`):**
 
 ```python
 # Numeric operations
-2 + 3
-10 / 3
-2 ** 10
+2 + 3    #addition
+10 / 3   #division
+2 ** 10  #exponentiation
 
 # Strings
 print("Hello, sociology!")
-name = "Rutgers"
-print(f"Welcome to {name}!")
+name = "Rutgers"             # assign a string to a variable
+print(f"Welcome to {name}!") #f-strings, see Think Python Ch.13.2
 
 # Exit the interpreter
 exit()
@@ -303,94 +363,143 @@ exit()
 
 ---
 
-# 5. Conda
+# 5. Python Development Environments
 
-## What is conda and why do we need it?
+When writing Python code, you have several options for where and how to write it. Here's a quick overview of the most common ones you'll encounter in this course and beyond.
 
-**Conda** is a package and environment manager. It solves two problems:
+## Text editors & Python scripts
 
-1. **Package management** — installs Python libraries and their dependencies correctly
-2. **Environment isolation** — lets you create separate environments for different projects, so they don't interfere with each other
+The simplest way to run Python: write code in a plain `.py` file using any text editor (Notepad, TextEdit, nano), then run it from the command line:
 
-Think of it like having separate lab benches for different experiments — reagents from one don't contaminate the other.
+```bash
+python3 my_script.py
+```
+
+This is how most production code and automation work. It's also what AI coding agents like Claude Code and Codex operate on — they read and write `.py` files directly.
 
 ::: {.callout-tip}
 ## Practice
-Set up the course environment:
+Create and run your first Python script:
 
-1. **Install Miniconda** if you haven't already — see the [Setup Guide](../../setup.qmd) for platform-specific instructions.
-
-2. **Create the course environment:**
+1. Open a terminal and create a new file:
 
 ```bash
-conda create -n aisocsci python=3.11 -y
+cd ~/Documents/my-first-repo    # or any directory you like
+nano hello.py                   # opens a simple text editor in the terminal
+# notepad hello.py              # On Windows, use Notepad instead
 ```
 
-3. **Activate it:**
+2. Type the following into the editor:
+
+```python
+name = input("What is your name? ")
+print(f"Hello, {name}! Welcome to AI for Social Science Research.")
+```
+
+3. Save and exit (`Ctrl + O`, `Enter`, `Ctrl + X` in nano), then run it:
 
 ```bash
-conda activate aisocsci
+python3 hello.py
 ```
 
-You should see `(aisocsci)` appear at the beginning of your terminal prompt. You'll run this command each time you work on course materials.
-
-4. **Install core packages:**
-
-```bash
-pip install jupyter pandas numpy matplotlib seaborn scikit-learn
-pip install openai anthropic
-```
-
-5. **Verify:**
-
-```bash
-python --version     # Should show Python 3.11.x
-conda list           # Should show the packages you just installed
-```
+You should see the prompt, type your name, and get a greeting back. That's all a Python script is — a plain text file that Python executes top to bottom.
 :::
 
----
+## Jupyter Notebook
 
-# 6. Jupyter Notebook
-
-## What is Jupyter Notebook?
-
-Jupyter Notebook is an interactive computing environment that lets you combine:
-
-- **Code cells** — write and run Python code
-- **Markdown cells** — write formatted text, equations, images
-- **Output** — see results, tables, and plots inline
-
-It's named after three languages: **Ju**lia, **Py**thon, **R** — though we'll use it with Python.
-
-## Notebooks vs. Python scripts
+Jupyter Notebook is an interactive environment that lets you combine code, output, and formatted text in a single document (`.ipynb` files). You write code in **cells** and run them one at a time — useful for exploration, teaching, and reports.
 
 | | Jupyter Notebook (`.ipynb`) | Python script (`.py`) |
 |---|---|---|
-| **Best for** | Exploration, teaching, reports | Production code, automation, packages |
+| **Best for** | Exploration, teaching, reports | Production code, automation |
 | **Execution** | Cell by cell, interactive | Top to bottom |
 | **Output** | Inline (tables, plots) | Console only (unless saved) |
 | **Version control** | Messy diffs (JSON format) | Clean diffs (plain text) |
 
-**In this course:** We use Jupyter for labs (interactive exploration). As you advance, you'll increasingly write `.py` scripts for reusable code.
+**In this course:** We use Jupyter for labs. As you advance, you'll increasingly write `.py` scripts for reusable code.
 
-**Launch Jupyter:**
+## VS Code
 
-```bash
-conda activate aisocsci
-jupyter notebook
-```
+[VS Code](https://code.visualstudio.com/) is a free code editor by Microsoft that supports Python, Jupyter notebooks, Git integration, and AI coding extensions (GitHub Copilot, Claude Code). We'll use it later in the course when we work with AI coding agents.
+
+You don't need to install it today, but if you'd like to get ahead: [download VS Code](https://code.visualstudio.com/).
+
+## conda & virtual environments
+
+When working on multiple Python projects, you may run into version conflicts — project A needs version 1.0 of a library while project B needs version 2.0. **Environment managers** solve this by creating isolated spaces for each project.
+
+- **venv** — built into Python. Lightweight, good for simple projects.
+- **conda** — a heavier tool that can also manage non-Python dependencies. Common in data science.
+
+For this course, a single environment is sufficient. We'll set one up in the Practice below and use it throughout the semester.
 
 ::: {.callout-tip}
 ## Practice
-*Coming soon — we'll practice Jupyter in the data wrangling section below.*
+
+**Step 1 — Create a course environment and install packages**
+
+```bash
+# Create a virtual environment using the Python 3.11 you installed in Section 4
+python3.11 -m venv ~/aisocsci-env
+
+# Activate it
+source ~/aisocsci-env/bin/activate        # macOS/Linux
+# ~/aisocsci-env\Scripts\activate          # Windows (Git Bash)
+# ~/aisocsci-env\Scripts\Activate.ps1      # Windows (PowerShell)
+```
+
+You should see `(aisocsci-env)` at the beginning of your terminal prompt. You'll run the activate command each time you work on course materials. To leave the environment, run `deactivate`.
+
+::: {.callout-note}
+If `python3.11` is not found, go back to Section 4 and complete the Python installation first.
+:::
+
+```bash
+# Install core packages
+pip install jupyter pandas numpy matplotlib seaborn scikit-learn
+pip install openai anthropic
+```
+
+**Step 2 — Launch Jupyter Notebook**
+
+Navigate to your repo folder and launch Jupyter from there:
+
+```bash
+cd ~/Documents/my-first-repo    # the repo you created in Section 3
+jupyter notebook
+```
+
+This opens a browser tab showing the files in that folder. Try creating a new notebook (click **New** → **Python 3**) and running:
+
+```python
+print("Hello from Jupyter!")
+2 + 2
+```
+
+**Step 3 — Verify your packages**
+
+In a new Jupyter cell, run:
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import sklearn
+
+print(f"pandas:       {pd.__version__}")
+print(f"numpy:        {np.__version__}")
+print(f"scikit-learn: {sklearn.__version__}")
+print("All set!")
+```
+
+If all versions print without errors, you're ready for the rest of the course.
 :::
 
 ---
 
-# 7. Basic Data Wrangling & ML in Python
+# 6. Basic Data Wrangling & ML in Python
 
-## 7.1 Loading packages and data
+## 6.1 Loading packages and data
 
 ```python
 # Import libraries
@@ -409,7 +518,7 @@ In Python, you import libraries at the top of your script. Compare to R:
 | `df.head()` | `head(df)` |
 | `df.describe()` | `summary(df)` |
 
-## 7.2 Creating and inspecting data
+## 6.2 Creating and inspecting data
 
 ```python
 # Create a synthetic dataset (in future labs we'll use real data)
@@ -444,7 +553,7 @@ data.describe()
 data['income_category'].value_counts()
 ```
 
-## 7.3 Basic visualization
+## 6.3 Basic visualization
 
 ```python
 # Histogram
@@ -468,7 +577,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## 7.4 Functions in Python
+## 6.4 Functions in Python
 
 In Python, functions are defined with `def`. Compare to R:
 
@@ -499,63 +608,10 @@ calculate_mean(c(1, 2, 3, 4, 5))
 
 Key differences: Python uses `def`, indentation defines blocks (no curly braces), and `return` is explicit.
 
-## 7.5 Statistics & ML: Translating Concepts
 
-You can think of many statistical concepts you already know from an ML perspective:
+## 6.5 Machine Learning Models
 
-| Statistics | Machine Learning |
-|---|---|
-| Regression model | Model |
-| Residuals (SSE, MSE) | Loss |
-| Predicted vs. observed | Evaluation |
-| Independent variables (IVs) | Features |
-| Dependent variable (DV) | Label |
-| Model fit (R², AIC) | Model performance (accuracy, F1) |
-
-**ML defined:** The process of training a piece of software (a *model*) to make useful predictions or generate content from data.
-
-## 7.5 Statistics & ML (cont.)
-
-**Key ML concepts:**
-
-A **dataset** is characterized by its *size* (number of examples/rows) and *diversity* (range of variation). Good datasets are both large and diverse.
-
-Datasets with more **features** can help a model discover additional patterns — but not always. Some features may have no causal relationship to the label.
-
-. . .
-
-The model's goal is to learn a mapping (a "black box") that best predicts labels from features.
-
-Based on the difference between predicted and actual values — the **loss** — the model gradually updates its solution.
-
-. . .
-
-**Evaluation:** We give the model only the features from a held-out test set, then compare its predictions to the true labels.
-
-## 7.6 Supervised vs. Unsupervised ML
-
-:::: {.columns}
-::: {.column width="50%"}
-**Supervised learning**
-
-- You have labeled data (features + known labels)
-- Goal: learn to predict the label
-- Examples: logistic regression, random forest, neural networks
-- Social science: classifying text sentiment, predicting survey responses
-
-:::
-::: {.column width="50%"}
-**Unsupervised learning**
-
-- No labels — only features
-- Goal: discover structure or patterns
-- Examples: k-means clustering, topic models, PCA
-- Social science: discovering latent topics in text, grouping respondents
-
-:::
-::::
-
-## 7.7 Practice: Supervised ML
+### Supervised Machine Learning: Logistic Regression for Binary Classification
 
 Let's train a classifier: **Can we predict policy support from demographics?**
 
@@ -603,7 +659,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## 7.8 Practice: Unsupervised ML
+### Unsupervised Machine Learning: K-Means Clustering
 
 Now let's try clustering — no labels, just discovering structure.
 
@@ -658,26 +714,24 @@ print(data.groupby('cluster')[['age', 'education_years']].mean().round(1))
 
 ## Before Next Week
 
-1. **Finish** [Think Python](https://allendowney.github.io/ThinkPython/index.html) if you haven't already
-2. **Watch** 3Blue1Brown: [Transformers, the Tech behind LLMs](https://youtu.be/wjZofJX0v4M) (27 min)
-3. **Complete** Google ML Crash Course: [Classification](https://developers.google.com/machine-learning/crash-course/classification)
-4. **Read** the four required readings for Week 2:
+1. **Watch** 3Blue1Brown: [Transformers, the Tech behind LLMs](https://youtu.be/wjZofJX0v4M) (27 min)
+2. **Complete** Google ML Crash Course: [Classification](https://developers.google.com/machine-learning/crash-course/classification)
+3. **Read** the four required readings for Week 2:
     - Kozlowski, Taddy, & Evans (2019) — word embeddings
-    - Stuhler (2022) — text parsers
-    - Karell & Freedman (2019) — rhetorics of radicalism
-    - Lai et al. (2024) — political YouTube videos
+    - Stuhler (2022) — dependency parsing
+    - Karell & Freedman (2019) — topic modeling
+    - Lai et al. (2024) — BERT model
+4. **Refer to** [Think Python](https://allendowney.github.io/ThinkPython/index.html) if you need a refresher/quick learning.
+
 
 ## Submitting Your Lab
 
-Save your completed Jupyter notebook and submit it:
+Save your completed Jupyter notebook and push it to your repository:
 
 ```bash
-# Option 1: push to your own GitHub
 git add .
 git commit -m "Complete lab 1"
 git push origin main
-
-# Option 2: email notebook to instructor
 ```
 
-If you need extra time, submit by email before the next class.
+Input your name, netID, and the repo link to this [google form](https://docs.google.com/spreadsheets/d/1m3iRIgdCrZlePTTitDpsGe6I_jEPtDwF4oFMeNix2uw/edit?usp=sharing) to submit your lab.

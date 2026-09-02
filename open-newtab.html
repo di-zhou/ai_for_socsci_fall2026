@@ -1,0 +1,8 @@
+<script>
+// Open slides and lab links in a new tab
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a[href*="/slides.html"], a[href*="/lab.html"]').forEach(function(link) {
+    link.setAttribute("target", "_blank");
+  });
+});
+</script>

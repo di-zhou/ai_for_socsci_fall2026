@@ -13,7 +13,8 @@ website:
 
     right:
       - icon: github
-        href: https://github.com/dizhou/ai_for_socsci_fall2026
+        href: https://github.com/di-zhou/ai_for_socsci_fall2026
+        target: _blank
   sidebar:
     - title: "Weekly Materials"
       style: docked
@@ -54,3 +55,4 @@ format:
     css: styles.css
     toc: true
     link-external-newwindow: true
+    include-after-body: open-newtab.html
