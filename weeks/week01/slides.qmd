@@ -428,142 +428,59 @@ This minicourse mainly focuses on **GenAI as a research tool and/or research met
 
 ::::
 
+. . .
 
-## SL vs. ML: Goal of Model Estimation
-
-:::: {.columns}
-::: {.column width="50%"}
-**Statistical Learning**
-
-- Cares about both **prediction** and **inference** (often inference more)
-- Much sociological research is devoted to statistical inference: estimating the exact functional form — *which* features matter, *what* the specific coefficient values are — because we want to **interpret and explain** outcomes
+::: {style="font-size: 0.8em;"}
+::: {.callout-note}
+# **Overfitting**: When a model fits the training data "too well," learning even the random noise in it, resulting in poor performance on unseen test data.
 :::
-::: {.column width="50%"}
-**Machine Learning**
-
-- Cares primarily about **prediction**, not inference
-- The specific functional form can be a "black box," as long as prediction is accurate
-- Because ML prioritizes prediction, evaluation focuses on how well the model performs on **unseen test data**, not on the data used to derive (train) the model
 :::
-::::
 
-## SL vs. ML: Estimation Strategy
 
-:::: {.columns}
-::: {.column width="50%"}
-**Statistical Inference**
+## Viewing Statistical Concepts through the ML Lens
 
-- Focuses on identifying the functional form and the specific values of coefficients
-- Estimation relies on deriving formulas or strategies like **maximum likelihood** to precisely identify parameters
-- Works well when models have known closed-form solutions
-:::
-::: {.column width="50%"}
-**Machine Learning**
-
-- Focuses on efficiently finding the functional form and "weights" (coefficients) through **iterative learning** from training data
-- Uses optimization algorithms like **gradient descent** to update weights step by step
-- Preferred for large-scale data and complex (non-linear) models where closed-form solutions do not exist
-:::
-::::
-
-## Viewing Statistical Concepts through the SL/ML Lens
-
-You already know many of these concepts — here's how they translate:
-
-| Statistics | Machine Learning |
+| Statistical Inference | Machine Learning |
 |---|---|
-| Regression model | Model |
+| Regression model | **Model** |
 | Independent variables / predictors | **Features** |
-| Dependent variable / outcome | **Label** |
+| Dependent variable / outcome | **Label** (or target) |
 | Intercept / constant | **Bias** |
 | Coefficients | **Weights** |
-| Residuals (SSE, MSE) | **Loss** |
-| Model fit (R², AIC) | Model performance (accuracy, F1) |
-| Fitting a model on data | **Training** a model |
+| Squared error (SSE, MSE) | **Loss** |
+| Fitting a model | **Training** a model |
+| Model fit (R², AIC) | Model performance (accuracy, F1, etc.) |
 
-## Viewing Statistical Concepts (cont.)
-
-- **Linear regression** is one way of making predictions of quantitative outcomes
-- **Logistic regression** is one method to make predictions of binary outcomes
-
-. . .
-
-**A shared goal:** In both statistical inference and ML, estimation tries to minimize the **loss** (the difference between predicted and actual values).
-
-. . .
-
-**A key ML concern: overfitting**
-
-ML pays particular attention to the problem of **overfitting** — when a model fits the training data "too well," learning even the random noise in it, resulting in poor performance on unseen test data.
-
-This is why ML always evaluates on a **held-out test set** that was not used during training.
 
 ## Supervised vs. Unsupervised Learning
 
+
 :::: {.columns}
-::: {.column width="50%"}
-**Supervised Learning**
+::: {.fragment .column width="50%"}
 
-- We know the **ground truth** (gold standard) about the outcome
-- We have **labeled** training and test data
-- Goal: predict the label correctly
-
-**Examples:**
-
-- Linear regression
-- Logistic regression
-- Tree-based models (random forests, gradient boosting)
+::: {style="font-size: 0.9em;"}
+| | Supervised  | Unsupervised |
+|--|---|---|
+| **Ground truth** | **Known** — we have labeled data | **Unknown** — no labels |
+| **Goal** | **Predict** the label correctly | **Discover** patterns or structure |
+| **Data** | Labeled training and test sets | Features only, no labels |
+| **Examples** | Linear regression, logistic regression, tree-based models | Principle Component Analysis (PCA), k-means clustering |
 :::
-::: {.column width="50%"}
-**Unsupervised Learning**
 
-- We **don't know** the ground truth
-- We want to **discover patterns** or structure from the data
-- Goal: find similar groups based on features
+:::
 
-**Examples:**
+::: {.fragment .column width="50%"}
 
-- Principal Component Analysis (PCA)
-- K-means clustering
-- Hierarchical clustering
+![](images/sml_vs_usml.png){width="100%"}
+
+::: {style="text-align: center; font-size: 0.7em;"}
+Source: [Devopedia](https://devopedia.org/supervised-learning)
+:::
+
 :::
 ::::
 
-. . .
-
-We'll practice both types in today's lab!
 
 
-
-
-
-
-
-# Lab Time! {.center background-color="#CC0033"}
-
-*3:45–4:40 — Some lecture points are woven into the lab notes*
-
-## Presentation Sign-Up
-
-Before we start the lab — have all groups signed up?
-
-| Week | Topic | Date | Group |
-|------|-------|------|-------|
-| 3 | Text, Image & Video Annotation | Sep. 16 | |
-| 4 | Simulating Subjects & Agents | Sep. 23 | |
-| 5 | AutoResearch | Sep. 30 | |
-| 6 | Qualitative Research | Oct. 7 | |
-
-## Lab Overview
-
-Today's lab covers:
-
-1. **Data management rules** — the 3-2-1 rule, sandbox environments for AI co-work
-2. **Version control** — what Git is and why we need it
-3. **CLI basics** — where to find it, why we need it
-4. **Python** — what it is, how it compares to R
-5. **Conda** — managing environments and packages
-6. **Jupyter Notebook** — what it is, notebooks vs. scripts
-7. **Basic data wrangling & ML in Python** — loading data, descriptives, supervised & unsupervised models
+# Lab {.center background-color="#CC0033"}
 
 **Open the lab page:** [Lab 1: Environment Setup & First Steps](lab.qmd)
