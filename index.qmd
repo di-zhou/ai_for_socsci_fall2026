@@ -18,7 +18,7 @@ This is a course portal that provides quick links to weekly lectures and lab mat
 
 | Week | Date | Topic | Materials |
 |:----:|------|-------|-----------|
-| 1 | Sep. 2 | Introduction & Set-up | Slides · [Lab](weeks/week01/lab.qmd) |
+| 1 | Sep. 2 | Introduction & Set-up | [Slides](weeks/week01/slides.qmd) · [Lab](weeks/week01/lab.qmd) |
 | 2 | Sep. 9 | Computational Methods before LLM & LLM Technical Basics | |
 | 3 | Sep. 16 | Text, Image, and Video Annotation | |
 | 4 | Sep. 23 | Simulating Subjects, Interactive Agents & Experiments | |
