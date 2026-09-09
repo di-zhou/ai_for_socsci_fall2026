@@ -54,5 +54,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    link-external-newwindow: true
     include-after-body: open-newtab.html

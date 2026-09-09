@@ -30,8 +30,7 @@ Our lab today focuses on word embeddings and BERT, as well as generating and eva
 
 0. Set Up
 1. Word embeddings — including the Kozlowski et al. (2019) projection method
-2. BERT
-3. Evaluating model performance — thresholds, precision, recall, ROC, calibration
+2. BERT - including fine-tuning and evaluation metrics
 
 ---
 

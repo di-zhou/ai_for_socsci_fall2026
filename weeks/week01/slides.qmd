@@ -6,6 +6,7 @@ date: "2026-09-02"
 format:
   revealjs:
     theme: default
+    link-external-newwindow: true
     css: slides-custom.css
     slide-number: true
     show-notes: false
