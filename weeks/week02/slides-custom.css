@@ -1,0 +1,9 @@
+/* Force white text on sage-green background slides */
+.reveal .slide-background-content[style*="6B8F7B"] + .slide,
+section[data-background-color="#6B8F7B"],
+section[data-background-color="#6B8F7B"] h1,
+section[data-background-color="#6B8F7B"] h2,
+section[data-background-color="#6B8F7B"] p,
+section[data-background-color="#6B8F7B"] em {
+  color: #FFFFFF !important;
+}
