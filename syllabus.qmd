@@ -199,7 +199,7 @@ In a large, complex community like Rutgers University, it is vital to reach out 
 - Baumann, Joachim, Paul Röttger, Aleksandra Urman, et al. 2025. "Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation." [arXiv:2509.08825](https://doi.org/10.48550/arXiv.2509.08825).
 - Stuhler, Oscar, Cat Dang Ton, and Etienne Ollion. 2025. "From Codebooks to Promptbooks: Extracting Information from Text with Generative Large Language Models." *Sociological Methods & Research* 54(3):794–848. [doi:10.1177/00491241251336794](https://doi.org/10.1177/00491241251336794).
 
-**Reading & Presentation Guiding Questions:** For 1, 2, 4: What are the research questions? How is LLM/genAI used in the research design? What are the advantages of using genAI vs. conventional computational methods? What are the limitations or weaknesses of using genAI in each research case? For 2: What is DSL? Why does it matter? How to deploy it in research? How would you change the research design for readings 1, 2, and 4 to follow the DSL framework?
+**Reading & Presentation Guiding Questions:** For 1, 3, 4: What are the research questions? How is LLM/genAI used in the research design? What are the advantages of using genAI vs. conventional computational methods? What are the limitations or weaknesses of using genAI in each research case? For 2: What is DSL? Why does it matter? How to deploy it in research? How would you change the research design for readings 1, 3, and 4 to follow the DSL framework?
 
 **Lecture:** Basics of LLMs; classification & evaluation in using LLM.
 
