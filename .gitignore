@@ -10,6 +10,10 @@ __pycache__/
 .venv/
 env/
 
+# R
+.RData
+.Rhistory
+
 # Environment and secrets
 .env
 *.env
@@ -28,3 +32,4 @@ Thumbs.db
 
 # other files
 memo_and_reference/
+lab_example/
