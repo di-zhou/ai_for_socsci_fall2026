@@ -4,6 +4,7 @@ subtitle: "AI for Social Science Research"
 format:
   revealjs:
     theme: default
+    link-external-newwindow: true
     slide-number: true
     transition: fade
     width: 1600
