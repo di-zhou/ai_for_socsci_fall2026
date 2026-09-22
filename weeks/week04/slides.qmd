@@ -11,6 +11,17 @@ format:
     height: 900
 ---
 
-## Coming Soon {.center}
+## Plan of Today & Logistics
 
-*Materials will be posted before class.*
+- **Student Presentation & Discussion** ~60 min, clarifying questions & critical evaluation of readings
+- **Break** 10 min
+- **Lab** ~45 min, simulating survey subjects (sillicon sampling), tailored experiment tools, simulating agents (demo only)
+  - In order to run the lab code smoothly today, you will need to load **credits** to one of the APIs (load the **minimum** amount the platform allows, and **turn off autoload**)
+- **Course project co-work** ~45 min, talk to me for any questions
+
+. . .
+
+Next week: 
+
+- Reading presentation (9/30): AutoResearch, by Chun-Ching, Duhui, and Yujia
+- Make sure you have either **Claude Pro** or **ChatGPT Plus** set up for next week's class!
