@@ -28,6 +28,9 @@ By this week, you should be able to activate your virtual enviornment & open Jup
 
 If you still struggle to do these steps, create a notebook/text file with the three lines of code, so that everytime you can copy-paste them in your CLI. 
 
+![](images/setup_txt.png){width="400"}
+
+
 **Step 1**: Activate your virtual environment:
 
 First, find out where is your `aisocsci-env` folder. For example, it might be saved in `/Users/yourname/aisocsci-env/`. If so, your first command will be: `source /Users/yourname/aisocsci-env/bin/activate`. If you successfully activated it, you should see that your command line now have a prefix like: `(aisocsci-env) 10-18-119-47:~ yourname$`
@@ -571,7 +574,7 @@ print(transcript)
 
 
 ::: {.callout-tip collapse="true"}
-## Expected output ((order and exact numbers may vary by model))
+## Expected output (order and exact numbers may vary by model)
 ```text
 [Alex] Well now, I’ve seen what all this talk about green energy does to jobs around here — it’s just another way for folks in D.C. to take our work and shove it somewhere else. We need real solutions, not more policies that just make it harder for us to put food on the table for our grandkids.
 
