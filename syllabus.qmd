@@ -100,6 +100,8 @@ An important aspect of graduate-level study is independent learning. While this 
 - [Andrej Karpathy's educational resources](https://karpathy.ai/) — two tracks for both technical and general audiences
 - [Neural Networks Lessons on 3Blue1Brown](https://www.3blue1brown.com/?topic=neural-networks) — one of the best visual explainers; we will utilize one lesson in this course
 - [Rutgers NB Library Graduate Specialist Program](https://libguides.rutgers.edu/graduatespecialist) — workshops and consultancy on data science, GIS, qualitative analysis, etc.
+- [Rutgers IT: Research Computing Events](https://it.rutgers.edu/research-computing/events/list/) - workshops and events on data science, AI, and HPC resources.
+- [Rutgers Newark Institute for Data, Research and Innovation Science, Large Language Reading/Retooling (LLRs) Series](https://idris.rutgers.edu/events/) -workshops and events on AI & LLMs.
 
 # Course Expectations and Policies
 
