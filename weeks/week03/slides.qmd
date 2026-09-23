@@ -19,7 +19,7 @@ format:
 
 ## Plan of Today & Logistics
 
-- **Student Presentation & Discussion** ~60 min, clarifying questions on readings
+- **[Student Presentation](https://docs.google.com/presentation/d/1AjUufNkEN8uH06ueezSmIjBVNmyFnEMj97UXBfl-s9Y/edit?slide=id.p#slide=id.p) & Discussion** ~60 min, clarifying questions on readings
 - **Break** 10 min
 - **Lecture** ~45 min, technical details on using LLMs APIs, evaluation metrics, design-based supervised learning
 - **Lab** ~45 min

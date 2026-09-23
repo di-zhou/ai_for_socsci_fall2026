@@ -13,7 +13,7 @@ format:
 
 ## Plan of Today & Logistics
 ::: {style="font-size: 0.9em;"}
-- **Student Presentation & Discussion** ~60 min, clarifying questions & critical evaluation of readings
+- **[Student Presentation](https://docs.google.com/presentation/d/15rOD2gZB4qTOd4y4zv_gzRRg5JqQT50n/edit?slide=id.p1#slide=id.p1) & Discussion** ~60 min, clarifying questions & critical evaluation of readings
 - **Break** 10 min
 - **Lab** ~45 min, simulating survey subjects (sillicon sampling), tailored experiment tools, simulating agents (demo only)
 - **Course project co-work** ~45 min, talk to me for any questions
