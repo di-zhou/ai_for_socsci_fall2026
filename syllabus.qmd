@@ -266,16 +266,19 @@ Star & skim the following repositories on GitHub:
 
 ### Readings:
 
-1. Jowsey, Tanisha, Virginia Braun, Victoria Clarke, Deborah Lupton, and Michelle Fine. 2025. "We Reject the Use of Generative Artificial Intelligence for Reflexive Qualitative Research." *Qualitative Inquiry*. [doi:10.1177/10778004251401851](https://doi.org/10.1177/10778004251401851).
-2. Ibrahim, Elida Izani, Laura K. Nelson, and Andrea Voyer. 2026. "Should Generative AI Be Used in Reflexive Qualitative Research?" *Qualitative Inquiry*. [doi:10.1177/10778004261456208](https://doi.org/10.1177/10778004261456208).
-3. Timmermans, Stefan, and Iddo Tavory. 2026. "AI and Qualitative Data Analysis: On the Vulnerability of Thematic Analysis and the Importance of Theorizing." *Qualitative Inquiry*. [doi:10.1177/10778004261470128](https://doi.org/10.1177/10778004261470128).
-4. Abramson, Corey M., Tara Prendergast, Zhuofan Li, and Daniel Dohan. 2026. "Qualitative Research in an Era of Artificial Intelligence: A Pragmatic Approach to Data Analysis, Workflow, and Computation." *Annual Review of Sociology* 52:35–61. [doi:10.1146/annurev-soc-011824-104836](https://doi.org/10.1146/annurev-soc-011824-104836).
+1. Than, Nga, Leanne Fan, Tina Law, Laura K. Nelson, and Leslie McCall. 2025. "Updating 'The Future of Coding': Qualitative Coding with Generative Large Language Models." *Sociological Methods & Research* 54(3):849–88. [doi:10.1177/00491241251339188](https://doi.org/10.1177/00491241251339188).
+2. Abramson, Corey M., Tara Prendergast, Zhuofan Li, and Daniel Dohan. 2026. "Qualitative Research in an Era of Artificial Intelligence: A Pragmatic Approach to Data Analysis, Workflow, and Computation." *Annual Review of Sociology* 52:35–61. [doi:10.1146/annurev-soc-011824-104836](https://doi.org/10.1146/annurev-soc-011824-104836). *Please read the [supplementary materials](https://www.annualreviews.org/docserver/fulltext/soc/52/1/SO52_Abramson_SupplementalAppendix.pdf?expires=1790199187&id=id&accname=ar-374442&checksum=1BC2C93756695D9CC3E8DCC7DC40A9F0), too.
+3. Jowsey, Tanisha, Virginia Braun, Victoria Clarke, Deborah Lupton, and Michelle Fine. 2025. "We Reject the Use of Generative Artificial Intelligence for Reflexive Qualitative Research." *Qualitative Inquiry*. [doi:10.1177/10778004251401851](https://doi.org/10.1177/10778004251401851).
+4. Ibrahim, Elida Izani, Laura K. Nelson, and Andrea Voyer. 2026. "Should Generative AI Be Used in Reflexive Qualitative Research?" *Qualitative Inquiry*. [doi:10.1177/10778004261456208](https://doi.org/10.1177/10778004261456208).
+5. Timmermans, Stefan, and Iddo Tavory. 2026. "AI and Qualitative Data Analysis: On the Vulnerability of Thematic Analysis and the Importance of Theorizing." *Qualitative Inquiry*. [doi:10.1177/10778004261470128](https://doi.org/10.1177/10778004261470128).
+
 
 ### Optional:
 
-- Than, Nga, Leanne Fan, Tina Law, Laura K. Nelson, and Leslie McCall. 2025. "Updating 'The Future of Coding': Qualitative Coding with Generative Large Language Models." *Sociological Methods & Research* 54(3):849–88. [doi:10.1177/00491241251339188](https://doi.org/10.1177/00491241251339188).
+- Geiecke, Friedrich, and Xavier Jaravel. 2024. “Conversations at Scale: Robust AI-Led Interviews with a Simple Open-Source Platform.” CEPR Discussion Papers, CEPR Discussion Papers, November, 19705. [https://ideas.repec.org//p/cpr/ceprdp/19705.html](https://ideas.repec.org//p/cpr/ceprdp/19705.html).
 
-**Reading & Presentation Guiding Questions:** What leads to the disagreement among qualitative scholars in terms of their stance on using genAI for qualitative research? How can genAI be integrated into the workflow of qualitative research? What is your reflection on the debate?
+
+**Reading & Presentation Guiding Questions:** How can genAI be integrated into the workflow of qualitative research? What are some of the risks and ways to mitigate them in computational-qualitative research?What leads to the disagreement among qualitative scholars in terms of their stance on using genAI for qualitative research? What is your reflection on the debate?
 
 **Course project co-work:** After the presentation and discussion, we will use the rest of the course time to co-work on your own research project for this minicourse.
 
