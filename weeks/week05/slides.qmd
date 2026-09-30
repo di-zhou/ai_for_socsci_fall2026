@@ -192,12 +192,11 @@ associated with changes in their attitudes towards government spending
 between 2016/2018 to 2020? I saved some useful literature in the
 literature folder. Target output is similar to the research letter by
 Blumenau, Hicks and Pahontu 2021, with a length about 8-10 pages single
-space. Run in human-in-the-loop mode.
+space. 
 ```
 . . .
 
 ::: {style="font-size: 0.8em;"}
-- When it asks for a run mode, answer **human-in-the-loop** — it will not infer that from silence.
 - You should check the run occasionally; it may prompt you for questions. 
 - *The run will take about 15 to 30 min for a short paper, take class break at your own pace.*
 :::
