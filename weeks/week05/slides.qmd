@@ -16,7 +16,7 @@ format:
 
 ## Plan of Today & Logistics
 
-- **[Student Presentation]() and Q&A** ~ 45 min, three different auto-research workflows, state of the discipline, LLMs & learning
+- **[Student Presentation](https://docs.google.com/presentation/d/1FcdEnNwMGx2t-7HW6_vlQIpM7ndEIjYBCoKBJxQ-pFo/edit?slide=id.p1#slide=id.p1) and Q&A** ~ 45 min, three different auto-research workflows, state of the discipline, LLMs & learning
 - **Lecture/Lab/Break** ~ 60 min, set up and begin auto-research on your device
 - **Lab/Discussion** ~15 min read & evaluate auto-research output, ~ 40 min share & discuss your experience with auto-research, define responsible use of AI, concerns for research & learning
 
@@ -59,7 +59,7 @@ Next week:
 ::: {style="font-size: 0.9em;"}
 :::: {.columns}
 ::: {.column width="47%"}
-[`/scholar-brainstorm`](https://github.com/joshzyj/scholarskills/blob/main/.claude/skills/scholar-brainstorm/SKILL.md) generates research questions from existing materials. 
+[`/scholar-brainstorm`](https://github.com/joshzyj/open-scholar-skill/blob/main/.claude/skills/scholar-brainstorm/SKILL.md) generates research questions from existing materials. 
 
 `SKILL.md` usually consists of three parts:
 
