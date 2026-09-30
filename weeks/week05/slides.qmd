@@ -29,7 +29,7 @@ Next week:
 - No lab next week, we will have co-work session on final project (Due Oct 18th) -- meet with me in office hours if you haven't talked to me about your final project. 
 
 
-# Part 1. Two Key Cconcepts in Auto-Research: Agent and Skill {.center background-color="#CC0033"}
+# Part 1. Two Key Concepts in Auto-Research: Agent and Skill {.center background-color="#CC0033"}
 
 ## Agent
 
