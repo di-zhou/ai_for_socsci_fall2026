@@ -1,10 +1,13 @@
 ---
-title: "Lab 5: Developing & Reflecting on AutoResearch"
+title: "Lab 5: Auto-Research"
 subtitle: "Week 5"
 format:
   html:
     code-fold: false
     code-tools: true
+    toc: true
+    toc-depth: 3
 ---
 
-*Content coming soon.*
+
+Week 5 lab materials are included in the lecture slides. No separate lab files. 
