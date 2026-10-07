@@ -11,6 +11,25 @@ format:
     height: 900
 ---
 
-## Coming Soon {.center}
+## Plan of Today & Logistics
 
-*Materials will be posted before class.*
+::: {style="font-size: 0.85em;"}
+
+- **Follow-up discussion on week 5**: ~ 10 min, results of auto-research --what do you think? 
+- **[Student presentation]() and Q&A**: ~ 60 min, debates on using genAI for qualitative research
+- **Break**: 10 min
+- **Co-work**: ~ 80 min, working on final project
+
+. . .
+
+**Next week & Next Course**:
+
+::: {.incremental}
+- **Final project presentation**: 10 min presentation + 10 min Q&A
+- **Final project deliberables**: due 11:59 PM, Sunday, Oct 18th, submit through **Canvas**
+  - If you opt for project type 1 (using genAI as method) or type 2 (research about genAI): submit proposal + preliminary results & coding files (if any).
+  - If you opt for project type 3 (testing genAI for existing research project): project report + reflection on AI-assisted research with all relevant files generated in the process.
+  - See syllabus for detailed page requirements. 
+- **Mini-course on Sociology of AI**: finalizing syllabus, **week 1 reading & book recommendations already posted on Canvas**. 
+:::
+:::
