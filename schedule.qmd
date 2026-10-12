@@ -1,0 +1,27 @@
+---
+title: "Schedule & Materials"
+subtitle: "Part 1 · AI for Social Science Research · 16:920:574:M1 · Fall 2026 (7-Week Minicourse)"
+pagetitle: "Schedule & Materials · Part 1: AI for Social Science Research"
+---
+
+## Course Details
+
+- **Instructor:** Dr. Di Zhou (she/her), [di.zhou@rutgers.edu](mailto:di.zhou@rutgers.edu)
+- **Meetings:** Wednesdays, 2:00–4:40 PM (ET) at Davison 128, from Sep. 2nd to Oct. 14th, 2026
+- **Office Hours:** Wednesdays, 1:00–2:00 PM (ET) at Davison 137, [sign-up here](https://calendar.app.google/JRY6bzeHvYBcftX59)
+
+## How to Use This Page
+
+This page provides quick links to weekly lectures and lab materials (updated weekly). You can also check the course syllabus [here](syllabus.qmd), or return to the [Sociology of AI home page](index.qmd).
+
+## Schedule & Materials
+
+| Week | Date | Topic | Materials |
+|:----:|------|-------|-----------|
+| 1 | Sep. 2 | Introduction & Set-up | [Slides](weeks/week01/slides.qmd) · [Lab](weeks/week01/lab.qmd) |
+| 2 | Sep. 9 | Computational Methods before LLM & LLM Technical Basics |  [Slides](weeks/week02/slides.qmd) · [Lab](weeks/week02/lab.qmd) |
+| 3 | Sep. 16 | Text, Image, and Video Annotation |[Slides](weeks/week03/slides.qmd) · [Lab](weeks/week03/lab.qmd) |
+| 4 | Sep. 23 | Simulating Subjects, Interactive Agents & Experiments |[Slides](weeks/week04/slides.qmd) · [Lab](weeks/week04/lab.qmd) |
+| 5 | Sep. 30 | Developing & Reflecting on AutoResearch | [Slides](weeks/week05/slides.qmd) · [Lab](weeks/week05/lab.qmd) |
+| 6 | Oct. 7 | GenAI & Qualitative Research |[Slides](weeks/week06/slides.qmd) · No Lab |
+| 7 | Oct. 14 | Final Project Presentations | |

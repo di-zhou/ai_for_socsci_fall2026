@@ -1,0 +1,228 @@
+---
+title: "Syllabus"
+subtitle: "Part 2 · AI and Society"
+pagetitle: "Syllabus · Part 2: AI and Society"
+---
+
+## Course Details
+
+- **Course Number, Title and Term:** 16:920:574:MA Topics in Sociology: Sociology of AI, Fall 2026 (7-Week Minicourse)
+- **Offered by:** [Department of Sociology](https://sociology.rutgers.edu/), School of Arts and Sciences, Rutgers University–New Brunswick
+- **Instructor:** Dr. Di Zhou (she/her), Assistant Professor of Sociology, [di.zhou@rutgers.edu](mailto:di.zhou@rutgers.edu)
+- **Meetings:** Wednesdays, 2:00–4:40 PM (ET) at Davison 128, from Oct. 21st to Dec. 9th, 2026
+- **Office Hours:** Wednesdays, 1:00–2:00 PM (ET) at Davison 137, [sign-up here](https://calendar.app.google/JRY6bzeHvYBcftX59)
+
+# Course Description
+
+The recent development of AI technologies has often been compared with the most profound technological revolutions in human civilization. There is no question that this technology has changed and will continue to change various aspects of our society in crucial ways. As social scientists, it is imperative for us to understand the most current state of this technology and situate its construction, development, and effects within the broader social context, leveraging the powerful social, political, and economic theories developed based on empirical and theoretical understanding of the historical incidents of social change. 
+
+This minicourse focuses on the political economy of AI technologies, first by examining their effects on the labor market through the theoretical lens of technological change and automation in capitalistic societies. Then, we examine the infrastructure of the technologies: data, workers, capital, and resources, and the geopolitics that this technology is embedded in. Then, we spend a week that examines and discusses how to conceptualize and understand the impact of this technology on our daily life. In the end, we wrap up with a sociological examination of the AI tech elites and experts as a profession, and examine the development and collisions of their visions and ideologies of an "ideal world." 
+
+
+# Learning Objectives
+
+By the end of the minicourse, students are expected to: 
+
+1. Understand the historical development and material foundation of the current AI technologies, including the basics of neural network vs. the expert system, the origin of the training data, the process of RLHF, data centers/hyperscalers, and the capital and energy resources involved in the scaling of the technology.
+2. Develop understanding and hypotheses on the current wave of technological change by connecting it to theories of technological change, and be familiar with the cutting-edge methods and findings on AI's effects on the (domestic) labor market. 
+3. Understand how AI is "sociological" through the reading of sociological analyses of the various aspects of the technology both before and after the rise of genAI, including (1) the politics of classification and knowledge production, (2) the various ways AI may alter social interactions and the cultural understanding of intelligence and of "machines," and (3) the rising power of the AI tech elites and the social and political implications of their values and visions of the technology. 
+4. Evaluate how your existing research interest/research questions might be affected or should be adjusted given the development of AI technologies. Formulate new research questions related to AI. 
+
+# Assessment and Grading
+
+| Component | Points |
+|---|---|
+| Discussion | 30 |
+| Memo 1: reading reflection | 20 |
+| Memo 2: reading reflection | 20 |
+| Memo 3: course reflection | 30 |
+
+A: 90–100%, B: 80–89%, C: 70–79%, D: 60–69%, F: Below 60%
+
+## Discussion
+
+This seminar is built on discussion, and therefore it is imperative for all students to participate actively in class discussion that critically engages with the course readings. **I expect students to come to class with questions and reflective thoughts**. Use the reading memo questions to guide yourself to prepare questions. Another great way to prepare questions/discussion points is to read other students' reading reflection memos before class and engage with them in class. 
+
+## Memos
+
+### Reading Reflection
+
+From Week 2 to Week 7, pick two weeks and write reading memos based on that week's readings (**2-page max, single-spaced**). Submit the memo by **Tuesday 6 PM before the week's class to the shared [Google Folder](https://drive.google.com/drive/folders/1Pyv6NlX1C5cp5bcocV_sV5wIap-EVvnm?usp=drive_link)**. For example, if you plan to write a memo for Week 3's class on Nov. 4th, you should submit your memo by 6 PM, Tuesday Nov. 3rd. The memos should address the following questions:
+
+1. What is the central theme, question, or debate of this week's reading?
+2. How do the readings approach the question differently and how do their findings/arguments connect (or not)? Feel free to draw connections to earlier weeks' readings if relevant. 
+3. What is your critical evaluation of the readings? What gaps or questions do you think are promising and important to pursue but are left out?
+
+You are encouraged to read each other's memos before class and engage with the ideas proposed in these memos for class discussions. 
+
+### Course Reflection
+
+By the end of the class, every student should submit a course reflection memo (**3-page max, single-spaced**). This is due by **Monday, Dec. 14th at 11:59 PM via Canvas Assignment**. It should address the following questions: 
+
+1. What have you learned about AI technology from this minicourse? Which one(s) are most important to you and why? 
+2. What aspect of AI is sociological? In your view, what are the central questions and research agenda that a "sociology of AI" should pursue? 
+3. Evaluate whether your existing research interest and research questions are affected by what you have learned in this minicourse. In addition, what new questions do you think are worth pursuing? 
+
+---
+
+- Follow the **AI Usage Policy** below for your memo writing. 
+- Late submission will be given a 10% penalty per hour. 
+
+
+# AI Usage Policy
+
+**AI writing is strictly prohibited in this class. You are not allowed to use AI for any part of the memo writing for this course.** Writing and thinking are intrinsically linked, and the process of finding the language to express your ideas (even if it is summarizing others' arguments) is essential for producing original and creative research.
+
+I understand that if English is your second language (which is the case for me), you might lack confidence in the quality of your writing. You can use AI tools (or Grammarly) to correct the following grammar mistakes: subject–verb agreement, verb tense consistency within a clause, pronoun–antecedent agreement, article errors, and spelling errors. However, **you cannot use AI to polish or rewrite any part of your writing assignments.** It is okay if your sentences are rough. I'd rather you write them down than delegate writing tasks to AI.
+
+A particular challenge in responsible AI use in higher education is *enforcement*. While there are plenty of AI detection tools, there is no guarantee that they will not make mistakes, and any false positives will likely result in unfair accusation. As the course instructor, **I acknowledge the limitations of these AI detection technologies, but reserve the right to check your writing using such tools when in doubt.** I also reserve the right to request additional oral exams if I suspect the use of AI in your writing assignments. If you feel uncomfortable about the possibility that your writing might be uploaded to AI detection tools, please come talk to me and we can find a different arrangement. 
+
+The general rule of thumb is **not to automate the process of learning, thinking, and writing to AI,** which means you should always read and puzzle with the literature yourself, rather than let an LLM summarize it for you without reading it directly.
+
+# Additional Resources
+
+I recommend the following books — most of them are already in our required readings, but we only read part of them, and I recommend reading them in full if the topic is of interest to you. In addition, there are three special issues on the sociology of AI that curate some cutting-edge research that sociologists are pursuing. I recommend checking them out, too. 
+
+## Books
+
+- Bostrom, Nick. 2016. *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press.
+- Crawford, Kate. 2021. *Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence*. Yale University Press.
+- Hao, Karen. 2025. *Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI*. Penguin Press.
+- Kasy, Maximilian. 2025. *The Means of Prediction: How AI Really Works (and Who Benefits)*. University of Chicago Press.
+- Mitchell, Melanie. (2019) 2025. *Artificial Intelligence: A Guide for Thinking Humans*. Picador.
+- Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity.
+
+## Special Issues on the Sociology of AI
+
+- *Socius*: [a special issue in 2024 on the Sociology of AI](https://journals.sagepub.com/topic/collections-srd/srd-1-special_collection_artificial_intelligence/srd)
+- *Work and Occupations*: [a special issue in 2026 on creative work and AI (Volume 53, Issue 3)](https://journals.sagepub.com/toc/woxb/53/3) 
+- *Social Science Computer Review*: [a special issue in 2026 on "What Is Sociological About AI?" (Volume 44, Issue 1)](https://journals.sagepub.com/toc/ssce/44/1) 
+
+
+# Course Expectations and Policies
+
+## Mutual Respect and Privacy
+
+In this course, we will encounter a variety of important debates pertaining to the use and impacts of new technologies. Some may touch on contentious subjects and/or spotlight harms that may be especially concentrated within certain communities. I expect students to engage with each other's perspectives respectfully and constructively. I hope that discussions will be rigorous, but also ask that we work together to build an inclusive classroom environment.
+
+In the interest of creating a comfortable environment for sharing questions, ideas, and experiences in class discussions, I ask that you not make any digital recordings (audio, photographic, or video) of others without their consent during class time, unless that is part of your academic accommodations. Also, check in with me before sharing any course materials with others outside of this class.
+
+## Academic Integrity
+
+Academic integrity means that the work you submit is original. See Rutgers University–New Brunswick's [Academic Integrity Policy](https://nbacademicintegrity.rutgers.edu). You should also follow this course's AI Usage Policy.
+
+## Office Hours and Email Availability
+
+I will hold office hours at the times listed at the top of this syllabus. If these times don't work for you, please email me to arrange an alternate time. As a general practice, I will respond to emails within 24 hours during the week. If I do not respond within two business days, please send me an email as a reminder.
+
+## Accommodations
+
+Students who require accommodation to level the playing field can contact the [Rutgers Office of Disability Services (ODS)](https://ods.rutgers.edu). However, I also recognize that not all forms of challenges may receive official accommodations and navigating university bureaucracy can be difficult. Please reach out to me at any time and let me know how I can support you to make course requirements and challenges manageable.
+
+## Wellness Statement
+
+In a large, complex community like Rutgers University, it is vital to reach out to others, particularly those who are isolated or engaged in self-destructive activities. Student wellness is the responsibility of us all. [Rutgers Counseling, ADAP & Psychiatric Services (CAPS)](https://health.rutgers.edu/counseling-services) (848-932-7402) is the office responsible for the overall health and mental health needs of Rutgers–New Brunswick students. For 24/7 crisis support and additional resources, see [go.rutgers.edu/mentalhealthresources](http://go.rutgers.edu/mentalhealthresources).
+
+# Course Schedule
+
+## Week 1. Oct. 21st. Critical Introduction to AI
+
+### Required:
+
+1. Hao, Karen. 2025. *Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI*. Penguin Press. Chapter 4, Dreams of Modernity, pages 88–116.
+2. Kasy, Maximilian. 2025. *The Means of Prediction: How AI Really Works (and Who Benefits)*. University of Chicago Press. Chapter 4, What is Artificial Intelligence, pages 21–28; Chapter 7, Deep Learning & Chapter 8, The Exploration/Exploitation Trade-off, pages 57–65; Part III, Machine Power, pages 69–118.
+
+## Week 2. Oct. 28th. Theories of Technological Change in the Context of AI
+
+### Required:
+
+1. Braverman, Harry. (1974) 1998. *Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century*. NYU Press. Chapter 9, Machinery, pages 127–162; Chapter 10, Further Effects of Management and Technology on the Distribution of Labor, pages 163–171.
+2. Marx, Karl. (1867) 1990. *Capital: A Critique of Political Economy, Vol. 1*. Penguin. Chapter 15.3, The Most Immediate Effects of Machine Production on the Worker, pages 517–544; Chapter 15.6, The Compensation Theory, with Regard to the Workers Displaced by Machinery, pages 565–574. 
+3. Acemoglu, Daron. 2025. “The Simple Macroeconomics of AI.” *Economic Policy* 40 (121): 13–58. [doi:10.1093/epolic/eiae042](https://doi.org/10.1093/epolic/eiae042). [*Section 2 of the paper is technical. You should aim for getting an intuitive understanding of the conceptual framework. There is no need to understand the specifics of the equations.*]{.todo}
+4. Klein, Ezra. 2026. “Opinion: Why the A.I. Job Apocalypse (Probably) Won’t Happen.” Opinion. *The New York Times*, May 3. [https://www.nytimes.com/2026/05/03/opinion/ai-jobs-unemployment-silicon-valley.html](https://www.nytimes.com/2026/05/03/opinion/ai-jobs-unemployment-silicon-valley.html).
+
+### Recommended:
+- Imas, Alex. 2026. “What Will Be Scarce?” Substack newsletter. *Ghosts of Electricity*, April 14. [https://aleximas.substack.com/p/what-will-be-scarce](https://aleximas.substack.com/p/what-will-be-scarce).
+
+
+## Week 3. Nov. 4th. Empirical Studies on AI and the Labor Market
+
+### Required:
+
+1. 60 Minutes. 2026. *Humans Are Teaching AI How to Do Their Jobs*. 13:16. [https://www.youtube.com/watch?v=peNzGhlAeZw](https://www.youtube.com/watch?v=peNzGhlAeZw).
+2. Brynjolfsson, Erik, Bharat Chandar, and Ruyu Chen. 2026. “Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence.” Stanford Digital Economy Lab, August. [https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/).
+3. Massenkoff, Maxim, and Peter McCrory. 2026. *Labor Market Impacts of AI: A New Measure and Early Evidence*. Anthropic. [https://www.anthropic.com/research/labor-market-impacts](https://www.anthropic.com/research/labor-market-impacts). 
+4. Becker, Joel. 2026. *Measuring the Self-Reported Impact of Early-2026 AI on Technical Worker Productivity*. METR. [https://metr.org/blog/2026-05-11-ai-usage-survey/](https://metr.org/blog/2026-05-11-ai-usage-survey/).
+5. Autor, David, and Neil Thompson. 2025. *Beyond Job Displacement: How AI Could Reshape the Value of Human Expertise*. December 11. [https://www.digitalistpapers.com/vol2/autorthompson](https://www.digitalistpapers.com/vol2/autorthompson).
+
+### Recommended:
+- Orr, Cody, Lee C. Tucker, and Lawrence Warren. 2026. “Graduating Into Disruption: Labor Market Outcomes for AI-Exposed College Majors.” U.S. Census Bureau, September. [https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-56.html](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-56.html).
+
+
+
+## Week 4. Nov. 11th. Data, Classifications, and Algorithmic Bias
+
+### Required:
+1. Crawford, Kate. 2021. *Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence*. Yale University Press. Chapter 3, Data, pages 89–121; Chapter 4, Classification, pages 123–149.
+2. Hao, Karen. 2025. *Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI*. Penguin Press. Chapter 9, Disaster Capitalism, pages 189–223.
+3. Burrell, Jenna, and Marion Fourcade. 2021. “The Society of Algorithms.” *Annual Review of Sociology* 47: 213–37. [https://doi.org/10.1146/annurev-soc-090820-020800](https://doi.org/10.1146/annurev-soc-090820-020800).
+4. Atari, Mohammad, Mona J. Xue, Peter S. Park, Damián Blasi, and Joseph Henrich. 2023. “Which Humans?” Preprint, PsyArXiv, September 22. [doi:10.31234/osf.io/5b26t](https://doi.org/10.31234/osf.io/5b26t).
+
+### Recommended:
+- Gray, Mary L., and Siddharth Suri. 2019. *Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass*. Boston: Houghton Mifflin Harcourt.
+- Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?” Pp. 610–623 in *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT ’21)*. New York: ACM. [doi:10.1145/3442188.3445922](https://doi.org/10.1145/3442188.3445922).
+- Kerche, Francisco W., Matthew Zook, and Mark Graham. 2026. “The Silicon Gaze: A Typology of Biases and Inequality in LLMs through the Lens of Place.” *Platforms & Society* 3: 1–20. [doi:10.1177/29768624251408919](https://doi.org/10.1177/29768624251408919).
+
+
+## Week 5. Nov. 18th. Capital of AI
+*This week's class will end early at 3:50 PM so that students can attend the China Center talk at the department.*
+
+### Required:
+1. Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 2, Strategies of Capture, pages 33–72.
+2. Newmark, Eric. 2026. “Do AI Markets Face a Circular Financing Problem? Enterprise Applications Will Determine the Answer.” *IDC*, June 4. [https://www.idc.com/resource-center/blog/circular-financing-has-muddied-the-ai-story-watch-the-application-layer-instead/](https://www.idc.com/resource-center/blog/circular-financing-has-muddied-the-ai-story-watch-the-application-layer-instead/).
+3. Chollet, Derek, Lisa Sawyer, Terah Lyons, and Kip Wainscott. 2025. *The Geopolitics of AI: Decoding the New Global Operating System*. Center for Geopolitics, JPMorgan Chase. [https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/center-for-geopolitics/decoding-the-new-global-operating-system.pdf](https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/center-for-geopolitics/decoding-the-new-global-operating-system.pdf).
+4. Chan, Michelle, Emily Herbert, and Euan Healy. 2026. “AI Hyperscalers Are Transforming Debt.” The Big Read. *Financial Times*, September 28. [https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754?syn-25a6b1a6=1](https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754?syn-25a6b1a6=1).
+5. IEA. 2026. “Executive Summary – Key Questions on Energy and AI – Analysis.” IEA, Paris, France. [https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
+
+### Recommended:
+
+- IEA. 2026. “Key Questions on Energy and AI.” (Full Report) IEA, Paris, France. [https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).
+- Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 3, An Interregnum.
+
+
+## Week 6. Dec. 2nd. AI & Society
+
+### Required:
+1. Collins, Randall. 1992. *Sociological Insight: An Introduction to Non-Obvious Sociology*, 2nd ed. New York: Oxford University Press. Chapter 6, Can Sociology Create an Artificial Intelligence?, pages 155–184.
+2. Farrell, Henry, Alison Gopnik, Cosma Shalizi, and James Evans. 2025. “Large AI Models Are Cultural and Social Technologies.” *Science* 387 (6739): 1153–56. [doi:10.1126/science.adt9819](https://doi.org/10.1126/science.adt9819).
+3. Lapointe, Valerie A., Franklin Calazana, Simon Dubé, Regina-Maria Neppel, Sasha Blum, and David Lafortune. 2026. “Friends, Lovers, and Companions: A Systematic Scoping Review of Empirical Evidence on Human-AI Relationships.” *Computers in Human Behavior: Artificial Humans* 9 (August): 100384. [doi:10.1016/j.chbah.2026.100384](https://doi.org/10.1016/j.chbah.2026.100384).
+4. Tsvetkova, Milena, Taha Yasseri, Niccolò Pescetelli, and Tobias Werner. 2024. “A New Sociology of Humans and Machines.” *Nature Human Behaviour* 8 (10): 1864–76. [doi:10.1038/s41562-024-02001-8](https://doi.org/10.1038/s41562-024-02001-8).
+
+### Recommended:
+- Stromberg, David, Victor Lei, and Yanhui Wu. 2026. “The Generative AI Learning Penalty: Evidence from Chinese Secondary Education.” SSRN Scholarly Paper No. 6868618. Social Science Research Network, June 2. [doi:10.2139/ssrn.6868618](https://doi.org/10.2139/ssrn.6868618).
+- Yakura, Hiromu, Ezequiel Lopez-Lopez, Levin Brinkmann, et al. 2026. “Empirical Evidence of Large Language Model’s Influence on Human Spoken Communication.” arXiv:2409.01754. Preprint, arXiv, July 16. [doi:10.48550/arXiv.2409.01754](https://doi.org/10.48550/arXiv.2409.01754).
+- Anthis, Jacy Reese, Erik Brynjolfsson, and James Allen Evans. 2026. “Method, Mind, and Morality: How People Make Sense of Artificial Intelligence.” *Proceedings of the ACM on Human-Computer Interaction* 10 (6): CSCW123:1-CSCW123:41. [doi:10.1145/3816971](https://doi.org/10.1145/3816971).
+
+
+## Week 7. Dec. 9th. The Values and Visions of the AI Elites
+
+### Required:
+
+1. Abbott, Andrew. 1988. *The System of Professions: An Essay on the Division of Expert Labor*. University of Chicago Press. Chapter 2, Professional Work, pages 35–58; Chapter 8, The Information Profession, pages 215–246. 
+2. Hao, Karen. 2025. *Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI*. Penguin Press. Chapter 10, Gods and Demons, pages 227–255.
+3. Bostrom, Nick. 2016. *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press. Chapters 6, 7, 8, pages 110–154. *[skip pages 120–126.]{.todo}*
+4. The Ezra Klein Show, New York Times Opinion, and New York Times Podcasts. 2026. *Jensen Huang Thinks A.I. Alarmism Has Gone Too Far*. 01:47:21. [https://www.youtube.com/watch?v=HjurAWAr_nY](https://www.youtube.com/watch?v=HjurAWAr_nY). [*Watch the first one and a half hours.*]{.todo}
+
+
+### Recommended:
+- Abbott, Andrew. 1988. *The System of Professions: An Essay on the Division of Expert Labor*. University of Chicago Press. Chapter 4, The System of Professions, pages 86–113.
+- Altman, Sam. 2021. *Moore’s Law for Everything*. March 16. [https://moores.samaltman.com/](https://moores.samaltman.com/). 
+- Amodei, Dario. 2024. *Machines of Loving Grace*. October. [https://darioamodei.com/essay/machines-of-loving-grace#5-work-and-meaning](https://darioamodei.com/essay/machines-of-loving-grace#5-work-and-meaning).
+- Amodei, Dario. 2026. *Dario Amodei — We Must Pace the Frontier*. September. [https://darioamodei.com/post/we-must-pace-the-frontier](https://darioamodei.com/post/we-must-pace-the-frontier).
+- Mitchell, Melanie. (2019) 2025. *Artificial Intelligence: A Guide for Thinking Humans*. Picador. Chapter 14, On Understanding, pages 235–246; Chapter 15, Knowledge, Abstraction, and Analogy in Artificial Intelligence, pages 247–265.
+- Favaro, Marina, and Jack Clark. 2026. “When AI Builds Itself.” Anthropic. [https://www.anthropic.com/institute/recursive-self-improvement](https://www.anthropic.com/institute/recursive-self-improvement).
+- Greenblatt, Ryan, Ajeya Cotra, and Hjalmar Wijk. 2026. *Brief Independent Investigation of Agents’ Behavior, Reasoning and Collaboration in the OpenAI / Hugging Face Hacking Incident*. METR. [https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/).
+
+
+
+

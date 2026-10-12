@@ -3,22 +3,35 @@ project:
   output-dir: _site
 
 website:
-  title: "AI for Social Science Research Course Portal"
+  title: "Sociology of AI"
   navbar:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Syllabus"
-        href: syllabus.qmd
+      - text: "Part 1: AI for Social Science Research"
+        menu:
+          - text: "Schedule"
+            href: schedule.qmd
+          - text: "Syllabus"
+            href: syllabus.qmd
+      - text: "Part 2: AI and Society"
+        menu:
+          - text: "Syllabus"
+            href: ai-and-society/syllabus.qmd
 
     right:
       - icon: github
         href: https://github.com/di-zhou/ai_for_socsci_fall2026
         target: _blank
   sidebar:
-    - title: "Weekly Materials"
+    - id: part1
+      title: "Part 1 · Weekly Materials"
       style: docked
       contents:
+        - section: "Overview"
+          contents:
+            - schedule.qmd
+            - syllabus.qmd
         - section: "Week 1: Introduction & Set-up"
           contents:
             - weeks/week01/slides.qmd
@@ -47,7 +60,7 @@ website:
           contents:
             - weeks/week07/slides.qmd
   page-footer:
-    center: "AI for Social Science Research (Fall 2026)"
+    center: "Sociology of AI · Fall 2026"
 
 format:
   html:

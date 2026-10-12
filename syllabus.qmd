@@ -1,5 +1,7 @@
 ---
 title: "Syllabus"
+subtitle: "Part 1 · AI for Social Science Research"
+pagetitle: "Syllabus · Part 1: AI for Social Science Research"
 ---
 
 ## Course Details

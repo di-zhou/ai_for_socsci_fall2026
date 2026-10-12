@@ -67,3 +67,69 @@ h2:has(+ .table-responsive) {
 div.callout-note {
   border-left-color: #CC0033;
 }
+
+/* ---- Portal home page: one card per minicourse ---- */
+.course-card {
+  height: 100%;
+  padding: 1.25rem 1.5rem 1.1rem;
+  border: 1px solid #dee2e6;
+  border-top: 4px solid #CC0033;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.course-card .part-label {
+  margin-bottom: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #CC0033;
+}
+
+/* Cards use an h2 for the course name; drop the default rule under h2 */
+.course-card h2 {
+  margin-top: 0.2rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.55rem;
+}
+
+.course-card .course-meta {
+  margin-bottom: 0.75rem;
+  font-size: 0.92rem;
+  color: #6c757d;
+}
+
+.btn-scarlet {
+  background-color: #CC0033;
+  border-color: #CC0033;
+  color: #fff;
+}
+.btn-scarlet:hover {
+  background-color: #a8002b;
+  border-color: #a8002b;
+  color: #fff;
+}
+.btn-outline-scarlet {
+  background-color: transparent;
+  border-color: #CC0033;
+  color: #CC0033;
+}
+.btn-outline-scarlet:hover {
+  background-color: #CC0033;
+  color: #fff;
+}
+
+/* Draft / to-do markers in the Part 2 syllabus: highlighted so they cannot be missed.
+   Remove each {.todo} span (and this rule) before publishing. */
+.todo {
+  background-color: #fff3a3;
+  border-radius: 0.2rem;
+  padding: 0 0.15em;
+}
+
+/* Long reference links should wrap instead of overflowing the page */
+.content a {
+  overflow-wrap: anywhere;
+}
