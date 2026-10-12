@@ -57,7 +57,7 @@ You are encouraged to read each other's memos before class and engage with the i
 
 ### Course Reflection
 
-By the end of the class, every student should submit a course reflection memo (**3-page max, single-spaced**). This is due by **Monday, Dec. 14th at 11:59 PM via Canvas Assignment**. It should address the following questions: 
+At the end of the class, every student should submit a course reflection memo (**3-page max, single-spaced**). This is due by **Monday, Dec. 14th at 11:59 PM via Canvas Assignment**. It should address the following questions: 
 
 1. What have you learned about AI technology from this minicourse? Which one(s) are most important to you and why? 
 2. What aspect of AI is sociological? In your view, what are the central questions and research agenda that a "sociology of AI" should pursue? 
@@ -66,12 +66,12 @@ By the end of the class, every student should submit a course reflection memo (*
 ---
 
 - Follow the **AI Usage Policy** below for your memo writing. 
-- Late submission will be given a 10% penalty per hour. 
+- Late submission will be given a 10% penalty per hour unless otherwise noted. 
 
 
 # AI Usage Policy
 
-**AI writing is strictly prohibited in this class. You are not allowed to use AI for any part of the memo writing for this course.** Writing and thinking are intrinsically linked, and the process of finding the language to express your ideas (even if it is summarizing others' arguments) is essential for producing original and creative research.
+**AI writing is strictly prohibited in this class. You are not allowed to use AI for writing memos for this course.** Writing and thinking are intrinsically linked, and the process of finding the language to express your ideas (even if it is summarizing others' arguments) is essential for producing original and creative research.
 
 I understand that if English is your second language (which is the case for me), you might lack confidence in the quality of your writing. You can use AI tools (or Grammarly) to correct the following grammar mistakes: subject–verb agreement, verb tense consistency within a clause, pronoun–antecedent agreement, article errors, and spelling errors. However, **you cannot use AI to polish or rewrite any part of your writing assignments.** It is okay if your sentences are rough. I'd rather you write them down than delegate writing tasks to AI.
 
@@ -188,6 +188,10 @@ In a large, complex community like Rutgers University, it is vital to reach out 
 
 - IEA. 2026. “Key Questions on Energy and AI.” (Full Report) IEA, Paris, France. [https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).
 - Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 3, An Interregnum.
+
+
+## Nov. 25th. No Class 
+*Thanksgiving week, Friday classes*
 
 
 ## Week 6. Dec. 2nd. AI & Society
