@@ -178,9 +178,10 @@ In a large, complex community like Rutgers University, it is vital to reach out 
 *This week's class will end early at 3:50 PM so that students can attend the China Center talk at the department.*
 
 ### Required:
-1. Perez, Carlota. 2003. *Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages*. Edward Elgar Publishing. Chapter 1-4, pages 3-46.
-2. Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 1-2, pages 1–72.
+1. Perez, Carlota. 2003. *Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages*. Edward Elgar Publishing. Chapter 1-4, pages 3-46. [*PDF on Canvas*]{.todo}
+2. Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 2, Strategies of Capture, pages 32–72. [*PDF on Canvas*]{.todo}
 3. Chollet, Derek, Lisa Sawyer, Terah Lyons, and Kip Wainscott. 2025. *The Geopolitics of AI: Decoding the New Global Operating System*. Center for Geopolitics, JPMorgan Chase. [https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/center-for-geopolitics/decoding-the-new-global-operating-system.pdf](https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/center-for-geopolitics/decoding-the-new-global-operating-system.pdf).
+4. IEA. 2026. “Executive Summary – Key Questions on Energy and AI – Analysis.” IEA, Paris, France. [https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
 
 ### Recommended:
 - IEA. 2026. “Key Questions on Energy and AI.” (Full Report) IEA, Paris, France. [https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).
