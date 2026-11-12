@@ -174,21 +174,18 @@ In a large, complex community like Rutgers University, it is vital to reach out 
 - Kerche, Francisco W., Matthew Zook, and Mark Graham. 2026. “The Silicon Gaze: A Typology of Biases and Inequality in LLMs through the Lens of Place.” *Platforms & Society* 3: 1–20. [doi:10.1177/29768624251408919](https://doi.org/10.1177/29768624251408919).
 
 
-## Week 5. Nov. 18th. Capital of AI
+## Week 5. Nov. 18th. AI and Financial Capital
 *This week's class will end early at 3:50 PM so that students can attend the China Center talk at the department.*
 
 ### Required:
-1. Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 2, Strategies of Capture, pages 33–72.
-2. Newmark, Eric. 2026. “Do AI Markets Face a Circular Financing Problem? Enterprise Applications Will Determine the Answer.” *IDC*, June 4. [https://www.idc.com/resource-center/blog/circular-financing-has-muddied-the-ai-story-watch-the-application-layer-instead/](https://www.idc.com/resource-center/blog/circular-financing-has-muddied-the-ai-story-watch-the-application-layer-instead/).
+1. Perez, Carlota. 2003. *Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages*. Edward Elgar Publishing. Chapter 1-4, pages 3-46.
+2. Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 1-2, pages 1–72.
 3. Chollet, Derek, Lisa Sawyer, Terah Lyons, and Kip Wainscott. 2025. *The Geopolitics of AI: Decoding the New Global Operating System*. Center for Geopolitics, JPMorgan Chase. [https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/center-for-geopolitics/decoding-the-new-global-operating-system.pdf](https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/center-for-geopolitics/decoding-the-new-global-operating-system.pdf).
-4. Chan, Michelle, Emily Herbert, and Euan Healy. 2026. “AI Hyperscalers Are Transforming Debt.” The Big Read. *Financial Times*, September 28. [https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754?syn-25a6b1a6=1](https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754?syn-25a6b1a6=1).
-5. IEA. 2026. “Executive Summary – Key Questions on Energy and AI – Analysis.” IEA, Paris, France. [https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
 
 ### Recommended:
-
 - IEA. 2026. “Key Questions on Energy and AI.” (Full Report) IEA, Paris, France. [https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).
-- Srnicek, Nick. 2026. *Silicon Empires: The Fight for the Future of AI*. Polity. Chapter 3, An Interregnum.
-
+- Newmark, Eric. 2026. “Do AI Markets Face a Circular Financing Problem? Enterprise Applications Will Determine the Answer.” *IDC*, June 4. [https://www.idc.com/resource-center/blog/circular-financing-has-muddied-the-ai-story-watch-the-application-layer-instead/](https://www.idc.com/resource-center/blog/circular-financing-has-muddied-the-ai-story-watch-the-application-layer-instead/).
+- Chan, Michelle, Emily Herbert, and Euan Healy. 2026. “AI Hyperscalers Are Transforming Debt.” The Big Read. *Financial Times*, September 28. [https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754?syn-25a6b1a6=1](https://www.ft.com/content/00f94018-e658-4545-b16e-1bc00e19b754?syn-25a6b1a6=1).
 
 ## Nov. 25th. No Class 
 *Thanksgiving week, Friday classes*
