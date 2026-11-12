@@ -197,8 +197,10 @@ In a large, complex community like Rutgers University, it is vital to reach out 
 ### Required:
 1. Collins, Randall. 1992. *Sociological Insight: An Introduction to Non-Obvious Sociology*, 2nd ed. New York: Oxford University Press. Chapter 6, Can Sociology Create an Artificial Intelligence?, pages 155–184.
 2. Farrell, Henry, Alison Gopnik, Cosma Shalizi, and James Evans. 2025. “Large AI Models Are Cultural and Social Technologies.” *Science* 387 (6739): 1153–56. [doi:10.1126/science.adt9819](https://doi.org/10.1126/science.adt9819).
-3. Lapointe, Valerie A., Franklin Calazana, Simon Dubé, Regina-Maria Neppel, Sasha Blum, and David Lafortune. 2026. “Friends, Lovers, and Companions: A Systematic Scoping Review of Empirical Evidence on Human-AI Relationships.” *Computers in Human Behavior: Artificial Humans* 9 (August): 100384. [doi:10.1016/j.chbah.2026.100384](https://doi.org/10.1016/j.chbah.2026.100384).
-4. Tsvetkova, Milena, Taha Yasseri, Niccolò Pescetelli, and Tobias Werner. 2024. “A New Sociology of Humans and Machines.” *Nature Human Behaviour* 8 (10): 1864–76. [doi:10.1038/s41562-024-02001-8](https://doi.org/10.1038/s41562-024-02001-8).
+3. Tsvetkova, Milena, Taha Yasseri, Niccolò Pescetelli, and Tobias Werner. 2024. “A New Sociology of Humans and Machines.” *Nature Human Behaviour* 8 (10): 1864–76. [doi:10.1038/s41562-024-02001-8](https://doi.org/10.1038/s41562-024-02001-8).
+4. Turkle, Sherry. 2026. *Artificial Intimacy: Who We Become When We Talk to Machines*. Little, Brown and Company. Chapter 2-5, pages 45-122. [*PDF on Canvas*]{.todo}
+5. Lapointe, Valerie A., Franklin Calazana, Simon Dubé, Regina-Maria Neppel, Sasha Blum, and David Lafortune. 2026. “Friends, Lovers, and Companions: A Systematic Scoping Review of Empirical Evidence on Human-AI Relationships.” *Computers in Human Behavior: Artificial Humans* 9 (August): 100384. [doi:10.1016/j.chbah.2026.100384](https://doi.org/10.1016/j.chbah.2026.100384).
+
 
 ### Recommended:
 - Stromberg, David, Victor Lei, and Yanhui Wu. 2026. “The Generative AI Learning Penalty: Evidence from Chinese Secondary Education.” SSRN Scholarly Paper No. 6868618. Social Science Research Network, June 2. [doi:10.2139/ssrn.6868618](https://doi.org/10.2139/ssrn.6868618).
